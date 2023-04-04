@@ -1,10 +1,35 @@
 {
   "name": "themeless-ui",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "description": "Themeable React component library.",
-  "main": "index.js",
+  "keywords": [
+    "react",
+    "component",
+    "library"
+  ],
+  "author": "Joonas Tiala <joonas.tiala@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jtiala/themeless-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtiala/themeless-ui"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/themeless-ui.js",
+  "main": "./dist/themeless-ui.umd.cjs",
+  "typings": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/themeless-ui.js",
+      "require": "./dist/themeless-ui.umd.cjs"
+    }
+  },
   "scripts": {
-    "prepare": "tsc",
+    "build": "tsc && vite build",
+    "prepare": "npm run build",
     "lint": "npm run lint:eslint",
     "lint:fix": "npm run lint:eslint:fix",
     "lint:eslint": "eslint \"**/*.{ts,tsx}\"",
@@ -12,8 +37,10 @@
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
-  "author": "Joonas Tiala",
-  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
   "devDependencies": {
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
@@ -29,6 +56,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.3",
-    "vite": "4.2.1"
+    "vite": "4.2.1",
+    "vite-plugin-dts": "2.2.0"
   }
 }
