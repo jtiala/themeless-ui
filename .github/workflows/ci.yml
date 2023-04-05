@@ -10,3 +10,22 @@ jobs:
           node-version-file: ".nvmrc"
       - run: npm ci
       - run: npm run lint
+      - uses: actions/upload-artifact@v3
+        with:
+          name: reports
+          path: reports
+          retention-days: 5
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+      - run: npm ci
+      - run: npm run test
+      - uses: actions/upload-artifact@v3
+        with:
+          name: reports
+          path: reports
+          retention-days: 5
