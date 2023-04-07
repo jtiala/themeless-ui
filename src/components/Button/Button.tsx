@@ -1,22 +1,37 @@
-import { HTMLAttributes } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
-type HTMLButtonProps = HTMLAttributes<HTMLButtonElement>;
+type HTMLButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
-export interface ButtonProps {
+export type ButtonProps = {
   /**
    * Button content.
    */
-  children: HTMLButtonProps["children"];
+  children: ReactNode;
+
+  /**
+   * Type of the button.
+   */
+  type?: HTMLButtonProps["type"];
 
   /**
    * Callback to call when the button is clicked.
    */
   onClick?: HTMLButtonProps["onClick"];
-}
+
+  /**
+   * Callback to call when the button receives focus.
+   */
+  onFocus?: HTMLButtonProps["onFocus"];
+
+  /**
+   * Callback to call when the button loses focus.
+   */
+  onBlur?: HTMLButtonProps["onBlur"];
+};
 
 /**
  * A clickable UI element commonly used to trigger actions, such as submitting a form.
  */
-export function Button(props: ButtonProps) {
-  return <button {...props} />;
+export function Button({ type = "button", ...rest }: ButtonProps) {
+  return <button type={type} {...rest} />;
 }
