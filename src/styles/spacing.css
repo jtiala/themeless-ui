@@ -1,0 +1,12 @@
+:root {
+  --tui__spacing-0: 0;
+  --tui__spacing-1: var(--tui__spacing-unit);
+  --tui__spacing-2: calc(2 * var(--tui__spacing-unit));
+  --tui__spacing-3: calc(3 * var(--tui__spacing-unit));
+  --tui__spacing-4: calc(4 * var(--tui__spacing-unit));
+  --tui__spacing-8: calc(8 * var(--tui__spacing-unit));
+  --tui__spacing-12: calc(12 * var(--tui__spacing-unit));
+  --tui__spacing-16: calc(16 * var(--tui__spacing-unit));
+  --tui__spacing-32: calc(32 * var(--tui__spacing-unit));
+  --tui__spacing-64: calc(64 * var(--tui__spacing-unit));
+}

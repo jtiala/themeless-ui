@@ -1,4 +1,5 @@
 import { createElement, ReactNode } from "react";
+import { cn } from "../../utils/css";
 
 type TextType =
   | "abbr"
@@ -118,9 +119,11 @@ export type TextProps = (
 ) &
   CommonProps;
 
+const className = cn("text");
+
 /**
  * Display inline text content with different styles.
  */
 export function Text({ type, children, ...rest }: TextProps) {
-  return createElement(type || "span", rest, children);
+  return createElement(type || "span", { className, ...rest }, children);
 }

@@ -16,7 +16,7 @@ export const Default: Story = {
   },
 };
 
-export const Types: Story = {
+export const TextTypes = {
   render: () => (
     <ul>
       <li>

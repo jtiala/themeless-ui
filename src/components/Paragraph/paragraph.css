@@ -1,0 +1,5 @@
+.tui__paragraph {
+  display: block;
+  margin: 0 0 var(--tui__spacing-8) 0;
+  color: var(--tui__color-black);
+}

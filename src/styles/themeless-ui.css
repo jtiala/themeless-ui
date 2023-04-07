@@ -1,0 +1,9 @@
+/* Default theme */
+@import "default-theme.css";
+
+/* Variables */
+@import "spacing.css";
+
+/* Components */
+@import "../components/Paragraph/paragraph.css";
+@import "../components/Text/text.css";
