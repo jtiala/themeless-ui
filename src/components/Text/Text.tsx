@@ -109,7 +109,7 @@ type CommonProps = {
   children?: ReactNode;
 };
 
-type TextProps = (
+export type TextProps = (
   | GeneralProps
   | AbbreviationProps
   | DeletedTextProps
