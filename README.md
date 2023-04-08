@@ -5,6 +5,7 @@ A React component library harnessing the power of CSS.
 [![License](https://img.shields.io/npm/l/themeless-ui)](https://github.com/jtiala/themeless-ui/blob/main/LICENSE)
 [![npm](https://img.shields.io/npm/v/themeless-ui)](https://www.npmjs.com/package/themeless-ui)
 [![CI](https://github.com/jtiala/themeless-ui/actions/workflows/ci.yml/badge.svg)](https://github.com/jtiala/themeless-ui/actions/workflows/ci.yml)
+[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg)](https://jtiala.github.io/themeless-ui/)
 
 ThemelessUI is a yet another React component library, currently in very early development. Check out [the documentation](https://jtiala.github.io/themeless-ui/) and [the example app](https://codesandbox.io/p/sandbox/themeless-ui-example-d6wt46)!
 
