@@ -1,7 +1,7 @@
 {
   "name": "themeless-ui",
   "version": "0.1.0-alpha.2",
-  "description": "Themeable React component library.",
+  "description": "A React component library harnessing the power of CSS.",
   "keywords": [
     "react",
     "component",
