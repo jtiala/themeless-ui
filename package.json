@@ -29,8 +29,10 @@
   },
   "scripts": {
     "build": "tsc && vite build",
-    "test": "npm run test:storybook:standalone",
-    "test:report": "npm run test:storybook:standalone:report",
+    "test": "npm run test:vitest && npm run test:storybook:standalone",
+    "test:report": "npm run test:vitest:report && npm run test:storybook:standalone:report",
+    "test:vitest": "vitest",
+    "test:vitest:report": "vitest run --coverage --reporter default --reporter junit --outputFile ./reports/test-report-vitest.xml",
     "test:storybook": "test-storybook",
     "test:storybook:watch": "test-storybook --watch",
     "test:storybook:report": "JEST_JUNIT_OUTPUT_FILE=./reports/test-report-storybook.xml test-storybook --junit",
@@ -65,11 +67,15 @@
     "@storybook/react-vite": "7.0.2",
     "@storybook/test-runner": "0.10.0",
     "@storybook/testing-library": "0.0.14-next.2",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.4.3",
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
     "@typescript-eslint/eslint-plugin": "5.57.1",
     "@typescript-eslint/parser": "5.57.1",
     "@vitejs/plugin-react": "3.1.0",
+    "@vitest/coverage-c8": "0.29.8",
     "axe-playwright": "1.2.3",
     "concurrently": "8.0.1",
     "eslint": "8.37.0",
@@ -78,6 +84,7 @@
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-storybook": "0.6.11",
+    "jsdom": "21.1.1",
     "prettier": "2.8.7",
     "prop-types": "15.8.1",
     "react": "18.2.0",
@@ -89,6 +96,7 @@
     "stylelint-config-standard": "32.0.0",
     "typescript": "5.0.3",
     "vite": "4.2.1",
-    "vite-plugin-dts": "2.2.0"
+    "vite-plugin-dts": "2.2.0",
+    "vitest": "0.29.8"
   }
 }
