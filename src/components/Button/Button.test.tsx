@@ -1,8 +1,10 @@
 import {
+  componentToJson,
   describe,
   expect,
   it,
   render,
+  renderer,
   screen,
   userEvent,
   vi,
@@ -25,6 +27,11 @@ const element = (
 );
 
 describe("Button", async () => {
+  it("should match the snapshot", () => {
+    const component = renderer.create(element);
+    expect(componentToJson(component)).toMatchSnapshot();
+  });
+
   it("should render the button", () => {
     render(element);
     expect(screen.getByTestId("button")).toBeInTheDocument();

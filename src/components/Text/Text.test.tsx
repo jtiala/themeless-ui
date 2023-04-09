@@ -1,9 +1,23 @@
-import { cleanup, describe, expect, it, render, screen } from "../../test";
+import {
+  cleanup,
+  componentToJson,
+  describe,
+  expect,
+  it,
+  render,
+  renderer,
+  screen,
+} from "../../test";
 import { Text, TextProps } from "./Text";
 
 const element = <Text testId="text">Lorem ipsum dolor sit amet.</Text>;
 
 describe("Text", async () => {
+  it("should match the snapshot", () => {
+    const component = renderer.create(element);
+    expect(componentToJson(component)).toMatchSnapshot();
+  });
+
   it("should render the text", () => {
     render(element);
     const text = screen.getByTestId("text");

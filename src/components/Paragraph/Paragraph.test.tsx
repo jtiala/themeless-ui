@@ -1,4 +1,12 @@
-import { describe, expect, it, render, screen } from "../../test";
+import {
+  componentToJson,
+  describe,
+  expect,
+  it,
+  render,
+  renderer,
+  screen,
+} from "../../test";
 import { Paragraph } from "./Paragraph";
 
 const element = (
@@ -6,6 +14,11 @@ const element = (
 );
 
 describe("Paragraph", async () => {
+  it("should match the snapshot", () => {
+    const component = renderer.create(element);
+    expect(componentToJson(component)).toMatchSnapshot();
+  });
+
   it("should render the paragraph", () => {
     render(element);
     const paragraph = screen.getByTestId("paragraph");
