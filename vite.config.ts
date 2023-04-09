@@ -32,7 +32,7 @@ export default defineConfig({
     environment: "jsdom",
     globals: true,
     setupFiles: "src/test/setup.ts",
-    exclude: ["node_modules"],
+    exclude: ["node_modules", "dist", "storybook-static"],
     coverage: {
       provider: "c8",
       reporter: ["lcov"],
