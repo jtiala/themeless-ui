@@ -27,6 +27,7 @@ function customRender(
 
 export * from "@testing-library/react";
 export { default as userEvent } from "@testing-library/user-event";
+export { default as renderer } from "react-test-renderer";
 export {
   customRender as render,
   expect,
