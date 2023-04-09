@@ -5,5 +5,6 @@
 @import "spacing.css";
 
 /* Components */
-@import "../components/Paragraph/paragraph.css";
-@import "../components/Text/text.css";
+@import "../components/Button/Button.css";
+@import "../components/Paragraph/Paragraph.css";
+@import "../components/Text/Text.css";
