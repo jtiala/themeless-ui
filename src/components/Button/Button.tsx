@@ -1,5 +1,6 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import { CommonComponentProps } from "../../utils/components";
+import { cn } from "../../utils/css";
 
 type HTMLButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
@@ -30,9 +31,13 @@ export type ButtonProps = {
   onBlur?: HTMLButtonProps["onBlur"];
 } & CommonComponentProps;
 
+const className = cn("button");
+
 /**
  * A clickable UI element commonly used to trigger actions, such as submitting a form.
  */
 export function Button({ type = "button", testId, ...rest }: ButtonProps) {
-  return <button type={type} {...rest} data-testid={testId} />;
+  return (
+    <button type={type} {...rest} className={className} data-testid={testId} />
+  );
 }
