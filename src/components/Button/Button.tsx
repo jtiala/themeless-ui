@@ -1,4 +1,5 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
+import { CommonComponentProps } from "../../utils/components";
 
 type HTMLButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
@@ -27,11 +28,11 @@ export type ButtonProps = {
    * Callback to call when the button loses focus.
    */
   onBlur?: HTMLButtonProps["onBlur"];
-};
+} & CommonComponentProps;
 
 /**
  * A clickable UI element commonly used to trigger actions, such as submitting a form.
  */
-export function Button({ type = "button", ...rest }: ButtonProps) {
-  return <button type={type} {...rest} />;
+export function Button({ type = "button", testId, ...rest }: ButtonProps) {
+  return <button type={type} {...rest} data-testid={testId} />;
 }
