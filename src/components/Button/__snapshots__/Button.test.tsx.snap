@@ -2,6 +2,7 @@
 
 exports[`Button > should match the snapshot 1`] = `
 <button
+  className="tui__button"
   data-testid="button"
   onBlur={[Function]}
   onClick={[Function]}
