@@ -73,35 +73,35 @@ type GeneralProps = {
    *
    * Indicates the time and date of the change. Must be a valid date string with an optional time.
    */
-  datetime?: never;
+  dateTime?: never;
 };
 
 type AbbreviationProps = {
   type: Extract<TextType, "abbr">;
   title?: string;
   cite?: never;
-  datetime?: never;
+  dateTime?: never;
 };
 
 type QuoteProps = {
   type: Extract<TextType, "q">;
   title?: never;
   cite?: string;
-  datetime?: never;
+  dateTime?: never;
 };
 
 type DeletedTextProps = {
   type: Extract<TextType, "del">;
   title?: never;
   cite?: string;
-  datetime?: string;
+  dateTime?: string;
 };
 
 type InsertedTextProps = {
   type: Extract<TextType, "ins">;
   title?: never;
   cite?: string;
-  datetime?: string;
+  dateTime?: string;
 };
 
 type CommonProps = {
