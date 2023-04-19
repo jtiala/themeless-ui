@@ -7,6 +7,8 @@
   --tui__spacing-8: calc(8 * var(--tui__spacing-unit));
   --tui__spacing-12: calc(12 * var(--tui__spacing-unit));
   --tui__spacing-16: calc(16 * var(--tui__spacing-unit));
+  --tui__spacing-24: calc(24 * var(--tui__spacing-unit));
   --tui__spacing-32: calc(32 * var(--tui__spacing-unit));
+  --tui__spacing-40: calc(40 * var(--tui__spacing-unit));
   --tui__spacing-64: calc(64 * var(--tui__spacing-unit));
 }

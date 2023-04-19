@@ -1,8 +1,9 @@
 /* ThemelessUI Default Theme */
 :root {
   /* Spacing */
-  --tui__spacing-unit: 0.0625rem;
+  --tui__spacing-unit: 0.0625rem; /* 1px on 16px base */
 
-  /* Colors */
-  --tui__color-black: rgb(0 0 0);
+  /* Typography */
+  --tui__font-size-base: 1rem;
+  --tui__line-height-base: 1.5;
 }

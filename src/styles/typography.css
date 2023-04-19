@@ -1,0 +1,41 @@
+:root {
+  /* font-family */
+  --tui__font-family-sans: sans-serif;
+  --tui__font-family-serif: serif;
+  --tui__font-family-monospace: monospace;
+
+  /* font-size */
+  --tui__font-size-xs: calc((12 / 16) * var(--tui__font-size-base));
+  --tui__font-size-sm: calc((14 / 16) * var(--tui__font-size-base));
+  --tui__font-size-md: var(--tui__font-size-base);
+  --tui__font-size-lg: calc((18 / 16) * var(--tui__font-size-base));
+  --tui__font-size-xl: calc((20 / 16) * var(--tui__font-size-base));
+  --tui__font-size-2xl: calc((24 / 16) * var(--tui__font-size-base));
+  --tui__font-size-3xl: calc((30 / 16) * var(--tui__font-size-base));
+  --tui__font-size-4xl: calc((36 / 16) * var(--tui__font-size-base));
+  --tui__font-size-5xl: calc((48 / 16) * var(--tui__font-size-base));
+
+  /* font-weight */
+  --tui__font-weight-thin: 100;
+  --tui__font-weight-extra-light: 200;
+  --tui__font-weight-light: 300;
+  --tui__font-weight-normal: 400;
+  --tui__font-weight-medium: 500;
+  --tui__font-weight-semi-bold: 600;
+  --tui__font-weight-bold: 700;
+  --tui__font-weight-extra-bold: 800;
+  --tui__font-weight-black: 900;
+
+  /* line-height */
+  --tui__line-height-xs: calc((4 / 6) * var(--tui__line-height-base));
+  --tui__line-height-sm: calc((5 / 6) * var(--tui__line-height-base));
+  --tui__line-height-md: var(--tui__line-height-base);
+  --tui__line-height-lg: calc((7 / 6) * var(--tui__line-height-base));
+  --tui__line-height-xl: calc((8 / 6) * var(--tui__line-height-base));
+  --tui__line-height-2xl: calc((9 / 6) * var(--tui__line-height-base));
+  --tui__line-height-3xl: calc((10 / 6) * var(--tui__line-height-base));
+
+  /* smoothing */
+  --tui__font-smoothing-webkit: auto;
+  --tui__font-smoothing-moz: auto;
+}
