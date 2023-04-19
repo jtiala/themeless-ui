@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Heading > should match the snapshot 1`] = `
+<h1
+  className="tui__heading"
+  data-testid="heading"
+>
+  Lorem ipsum dolor sit amet.
+</h1>
+`;
