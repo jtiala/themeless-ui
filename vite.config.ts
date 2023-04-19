@@ -25,6 +25,13 @@ export default defineConfig({
           react: "React",
           "react-dom": "ReactDOM",
         },
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === "style.css") {
+            return "themeless-ui.css";
+          }
+
+          return assetInfo.name || "";
+        },
       },
     },
   },
