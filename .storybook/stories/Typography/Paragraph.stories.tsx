@@ -19,16 +19,17 @@ export const Default: Story = {
   },
 };
 
-export const CombinedWithText = {
+export const UsingWithText = {
   render: () => (
     <>
       <Paragraph>{lipsum}</Paragraph>
       <Paragraph>
         <Text type="del">Lorem ipsum dolor sit amet</Text>
         <Text type="ins">Donec accumsan ex vellacinia volutpat.</Text> Ut
-        tricies, <Text type="mark">mauris</Text> et varius finibus,{" "}
-        <Text type="strong">nulla ante</Text> efficitur libero, eget convallis
-        odio ex ut neque.
+        tricies, <Text type="mark">mauris</Text> et{" "}
+        <Text type="small">varius</Text> finibus,{" "}
+        <Text type="strong">nulla ante</Text> efficitur libero, eget convallis{" "}
+        <Text type="code">odio ex ut</Text> neque.
       </Paragraph>
       <Paragraph>{lipsum}</Paragraph>
     </>
