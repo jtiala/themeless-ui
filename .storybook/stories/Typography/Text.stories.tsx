@@ -17,9 +17,9 @@ export const Default: Story = {
   },
 };
 
-const Type = ({ children }: { children: ReactNode }) => (
+const Description = ({ children }: { children: ReactNode }) => (
   <Text type="code">
-    <Text type="var">{children}</Text>
+    <Text type="var">{children}</Text>:{" "}
   </Text>
 );
 
@@ -27,22 +27,33 @@ export const TextTypes = {
   render: () => (
     <ul>
       <li>
-        <Type>abbr:</Type>{" "}
+        <Description>abbr</Description>
+        <Text type="abbr">Abbreviation</Text>
+      </li>
+      <li>
+        <Description>abbr with title</Description>
         <Text type="abbr" title="Abbreviation extension">
           Abbreviation
         </Text>
       </li>
       <li>
-        <Type>b:</Type> <Text type="b">Bring Attention To</Text>
+        <Description>b</Description>
+        <Text type="b">Bring Attention To</Text>
       </li>
       <li>
-        <Type>cite:</Type> <Text type="cite">Citation</Text>
+        <Description>cite</Description>
+        <Text type="cite">Citation</Text>
       </li>
       <li>
-        <Type>code:</Type> <Text type="code">Inline Code</Text>
+        <Description>code</Description>
+        <Text type="code">Inline Code</Text>
       </li>
       <li>
-        <Type>del:</Type>{" "}
+        <Description>del</Description>
+        <Text type="del">Deleted Text</Text>
+      </li>
+      <li>
+        <Description>del with cite</Description>
         <Text
           type="del"
           cite="https://change-explanation.example.com"
@@ -52,13 +63,19 @@ export const TextTypes = {
         </Text>
       </li>
       <li>
-        <Type>em:</Type> <Text type="em">Emphasis</Text>
+        <Description>em</Description>
+        <Text type="em">Emphasis</Text>
       </li>
       <li>
-        <Type>i:</Type> <Text type="i">Idiomatic Text</Text>
+        <Description>i</Description>
+        <Text type="i">Idiomatic Text</Text>
       </li>
       <li>
-        <Type>ins:</Type>{" "}
+        <Description>ins</Description>
+        <Text type="ins">Inserted Text</Text>
+      </li>
+      <li>
+        <Description>ins with cite</Description>
         <Text
           type="ins"
           cite="https://change-explanation.example.com"
@@ -68,43 +85,101 @@ export const TextTypes = {
         </Text>
       </li>
       <li>
-        <Type>kbd:</Type> <Text type="kbd">Keyboard Input </Text>
+        <Description>kbd</Description>
+        <Text type="kbd">Keyboard Input </Text>
       </li>
       <li>
-        <Type>mark:</Type> <Text type="mark">Mark Text</Text>
+        <Description>mark</Description>
+        <Text type="mark">Mark Text</Text>
       </li>
       <li>
-        <Type>q:</Type>{" "}
+        <Description>q</Description>
+        <Text type="q">Inline Quotation</Text>
+      </li>
+      <li>
+        <Description>q with cite</Description>
         <Text type="q" cite="https://source-of-the-quote.example.com">
           Inline Quotation
         </Text>
       </li>
       <li>
-        <Type>s:</Type> <Text type="s">Strikethroug</Text>
+        <Description>s</Description>
+        <Text type="s">Strikethroug</Text>
       </li>
       <li>
-        <Type>samp:</Type> <Text type="samp">Sample Output</Text>
+        <Description>samp</Description>
+        <Text type="samp">Sample Output</Text>
       </li>
       <li>
-        <Type>small:</Type> <Text type="small">Side Comment</Text>
+        <Description>small</Description>
+        <Text type="small">Side Comment</Text>
       </li>
       <li>
-        <Type>span:</Type> <Text type="span">Content Span</Text>
+        <Description>span</Description>
+        <Text type="span">Content Span</Text>
       </li>
       <li>
-        <Type>strong:</Type> <Text type="strong">Strong Importance</Text>
+        <Description>strong</Description>
+        <Text type="strong">Strong Importance</Text>
       </li>
       <li>
-        <Type>sub:</Type> <Text type="sub">Subscript</Text>
+        <Description>sub</Description>
+        <Text type="sub">Subscript</Text>
       </li>
       <li>
-        <Type>sup:</Type> <Text type="sup">Superscript</Text>
+        <Description>sup</Description>
+        <Text type="sup">Superscript</Text>
       </li>
       <li>
-        <Type>u:</Type> <Text type="u">Unarticulated Annotation</Text>
+        <Description>u</Description>
+        <Text type="u">Unarticulated Annotation</Text>
       </li>
       <li>
-        <Type>var:</Type> <Text type="var">Variable</Text>
+        <Description>var</Description>
+        <Text type="var">Variable</Text>
+      </li>
+    </ul>
+  ),
+};
+
+export const CombiningTextTypes = {
+  render: () => (
+    <ul>
+      <li>
+        <Description>strong in mark</Description>
+        <Text type="mark">
+          Lorem ipsum dolor <Text type="strong">sit amet</Text>, consectetur
+          adipiscing elit.
+        </Text>
+      </li>
+      <li>
+        <Description>del and ins in cite</Description>
+        <Text>
+          First verse of{" "}
+          <Text type="cite">
+            <Text type="del">Think</Text>
+            <Text type="ins">Respect</Text>
+          </Text>
+          , by Aretha Franklin.
+        </Text>
+      </li>
+      <li>
+        <Description>var in code</Description>
+        <Text type="code">
+          let <Text type="var">foo</Text> = &quot;bar&quot;;
+        </Text>
+      </li>
+      <li>
+        <Description>samp in kbd</Description>
+        <Text type="kbd">
+          <Text type="kbd">
+            <Text type="samp">File</Text>
+          </Text>
+          ⇒
+          <Text type="kbd">
+            <Text type="samp">New Document</Text>
+          </Text>
+        </Text>
       </li>
     </ul>
   ),

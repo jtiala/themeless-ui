@@ -1,3 +1,94 @@
 .tui__text {
   display: inline;
+  box-sizing: border-box;
+  -webkit-font-smoothing: var(--tui__font-smoothing-webkit);
+  -moz-osx-font-smoothing: var(--tui__font-smoothing-moz);
+}
+
+abbr[title].tui__text {
+  text-decoration: dotted underline;
+  text-decoration-color: var(--tui__color-black);
+}
+
+b.tui__text {
+  font-weight: var(--tui__font-weight-bold);
+}
+
+cite.tui__text {
+  font-style: italic;
+}
+
+code.tui__text {
+  font-family: var(--tui__font-family-monospace);
+}
+
+del.tui__text {
+  text-decoration: solid line-through;
+  text-decoration-color: var(--tui__color-black);
+}
+
+em.tui__text {
+  font-style: italic;
+}
+
+i.tui__text {
+  font-style: italic;
+}
+
+ins.tui__text {
+  text-decoration-color: var(--tui__color-black);
+  vertical-align: baseline;
+}
+
+kbd.tui__text {
+  font-family: var(--tui__font-family-monospace);
+}
+
+mark.tui__text {
+  background-color: yellow;
+  color: var(--tui__color-black);
+}
+
+q.tui__text::before {
+  content: open-quote;
+}
+
+q.tui__text::after {
+  content: close-quote;
+}
+
+s.tui__text {
+  text-decoration: solid line-through;
+  text-decoration-color: var(--tui__color-black);
+}
+
+samp.tui__text {
+  font-family: var(--tui__font-family-monospace);
+}
+
+small.tui__text {
+  font-size: var(--tui__font-size-sm);
+}
+
+strong.tui__text {
+  font-weight: var(--tui__font-weight-bold);
+}
+
+sub.tui__text {
+  font-size: var(--tui__font-size-sm);
+  vertical-align: sub;
+}
+
+sup.tui__text {
+  font-size: var(--tui__font-size-sm);
+  vertical-align: super;
+}
+
+u.tui__text {
+  text-decoration: solid underline;
+  text-decoration-color: var(--tui__color-black);
+}
+
+var.tui__text {
+  font-style: italic;
 }
