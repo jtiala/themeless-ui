@@ -28,7 +28,7 @@
     }
   },
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "vite build",
     "test": "npm run test:vitest && npm run test:storybook:standalone",
     "test:report": "npm run test:vitest:report && npm run test:storybook:standalone:report",
     "test:vitest": "vitest run",
@@ -40,9 +40,11 @@
     "test:storybook:report": "JEST_JUNIT_OUTPUT_FILE=./reports/test-report-storybook.xml test-storybook --junit",
     "test:storybook:standalone": "concurrently -k -s first -n SB,TEST -c magenta,blue \"npm run storybook:build --quiet && npx serve -Lp 6006 storybook-static\" \"wait-on tcp:6006 && npm run test:storybook\"",
     "test:storybook:standalone:report": "concurrently -k -s first -n SB,TEST -c magenta,blue \"npm run storybook:build --quiet && npx serve -Lp 6006 storybook-static\" \"wait-on tcp:6006 && npm run test:storybook:report\"",
-    "lint": "npm run lint:eslint && npm run lint:stylelint",
-    "lint:report": "npm run lint:eslint:report && npm run lint:stylelint:report",
+    "lint": "npm run lint:tsc && npm run lint:eslint && npm run lint:stylelint",
+    "lint:report": "npm run lint:tsc:report && npm run lint:eslint:report && npm run lint:stylelint:report",
     "lint:fix": "npm run lint:eslint:fix && npm run lint:stylelint:fix",
+    "lint:tsc": "tsc",
+    "lint:tsc:report": "tsc > ./reports/lint-report-tsc.txt",
     "lint:eslint": "eslint \"**/*.{ts,tsx}\"",
     "lint:eslint:report": "eslint -f json -o ./reports/lint-report-eslint.json \"**/*.{ts,tsx}\"",
     "lint:eslint:fix": "eslint --fix \"**/*.{ts,tsx}\"",
@@ -52,7 +54,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "storybook": "storybook dev -p 6006 --no-open",
-    "storybook:build": "tsc && storybook build",
+    "storybook:build": "storybook build",
     "clean": "rm -rf dist storybook-static reports"
   },
   "peerDependencies": {
