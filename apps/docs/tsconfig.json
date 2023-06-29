@@ -1,0 +1,3 @@
+{
+  "extends": "@themeless-ui/typescript-config/storybook.json"
+}

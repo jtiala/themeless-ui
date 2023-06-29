@@ -1,0 +1,35 @@
+name: Release Please
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          command: manifest-pr
+          monorepo-tags: true
+      - uses: actions/checkout@v3
+        if: ${{ steps.release.outputs.releases_created }}
+      - uses: pnpm/action-setup@v2.2.4
+        if: ${{ steps.release.outputs.releases_created }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          cache: "pnpm"
+          registry-url: "https://registry.npmjs.org"
+        if: ${{ steps.release.outputs.releases_created }}
+      - run: pnpm install
+        if: ${{ steps.release.outputs.releases_created }}
+      - run: pnpm run build
+        if: ${{ steps.release.outputs.releases_created }}
+      - run: pnpm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        if: ${{ steps.release.outputs.releases_created }}

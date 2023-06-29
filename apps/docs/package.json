@@ -1,0 +1,72 @@
+{
+  "name": "@themeless-ui/docs",
+  "version": "0.0.0",
+  "description": "Storybook documentation for ThemelessUI",
+  "keywords": [
+    "docs",
+    "documentation",
+    "storybook"
+  ],
+  "author": "Joonas Tiala <joonas.tiala@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jtiala/themeless-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtiala/themeless-ui",
+    "directory": "apps/docs"
+  },
+  "files": [
+    "storybook-static",
+    "CHANGELOG.md"
+  ],
+  "packageManager": "pnpm@8.6.5",
+  "scripts": {
+    "dev": "storybook dev -p 6006 --no-open",
+    "build": "storybook build",
+    "preview": "serve storybook-static",
+    "test": "pnpm run test:storybook:standalone",
+    "test:report": "pnpm run test:storybook:standalone:report",
+    "test:storybook": "test-storybook",
+    "test:storybook:watch": "test-storybook --watch",
+    "test:storybook:report": "JEST_JUNIT_OUTPUT_FILE=./reports/test-report-storybook.xml test-storybook --junit",
+    "test:storybook:standalone": "concurrently -k -s first -n SB,TEST -c magenta,blue \"pnpm run build --quiet && npx serve -Lp 6006 storybook-static\" \"wait-on tcp:6006 && pnpm run test:storybook\"",
+    "test:storybook:standalone:report": "concurrently -k -s first -n SB,TEST -c magenta,blue \"pnpm run build --quiet && npx serve -Lp 6006 storybook-static\" \"wait-on tcp:6006 && pnpm run test:storybook:report\"",
+    "lint": "pnpm run lint:tsc && pnpm run lint:eslint",
+    "lint:report": "pnpm run lint:tsc:report && pnpm run lint:eslint:report",
+    "lint:fix": "pnpm run lint:eslint:fix",
+    "lint:tsc": "tsc",
+    "lint:tsc:report": "mkdir -p ./reports && tsc > ./reports/lint-report-tsc.txt",
+    "lint:eslint": "eslint \"**/*.{ts,tsx}\"",
+    "lint:eslint:report": "eslint -f json -o ./reports/lint-report-eslint.json \"**/*.{ts,tsx}\"",
+    "lint:eslint:fix": "eslint --fix \"**/*.{ts,tsx}\"",
+    "clean": "rm -rf storybook-static reports node_modules .turbo"
+  },
+  "dependencies": {
+    "@themeless-ui/react": "workspace:*",
+    "@themeless-ui/style": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "7.0.24",
+    "@storybook/addon-essentials": "7.0.24",
+    "@storybook/addon-interactions": "7.0.24",
+    "@storybook/addon-links": "7.0.24",
+    "@storybook/blocks": "7.0.24",
+    "@storybook/react-vite": "7.0.24",
+    "@storybook/react": "7.0.24",
+    "@storybook/test-runner": "0.11.0",
+    "@storybook/testing-library": "0.2.0",
+    "@themeless-ui/eslint-config": "workspace:*",
+    "@themeless-ui/typescript-config": "workspace:*",
+    "@types/react-dom": "18.2.6",
+    "@types/react": "18.2.14",
+    "axe-playwright": "1.2.3",
+    "concurrently": "8.2.0",
+    "eslint": "8.43.0",
+    "serve": "14.2.0",
+    "storybook": "7.0.24",
+    "typescript": "5.1.6",
+    "vite": "4.3.9"
+  }
+}

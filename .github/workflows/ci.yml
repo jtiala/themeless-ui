@@ -1,31 +1,29 @@
 name: CI
-on: push
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
 jobs:
-  lint:
+  lint-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.4
       - uses: actions/setup-node@v3
         with:
           node-version-file: ".nvmrc"
-      - run: npm ci
-      - run: npm run lint:report
+          cache: "pnpm"
+          registry-url: "https://registry.npmjs.org"
+      - run: pnpm install
+      - run: pnpm exec playwright install --with-deps
+      - run: pnpm run build
+      - run: pnpm run lint:report
+      - run: pnpm run test:report
       - uses: actions/upload-artifact@v3
         with:
           name: reports
-          path: reports
+          path: ./**/reports
           retention-days: 5
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version-file: ".nvmrc"
-      - run: npm ci
-      - run: npm run test:report
-      - uses: actions/upload-artifact@v3
-        with:
-          name: reports
-          path: reports
-          retention-days: 5
+        if: always()

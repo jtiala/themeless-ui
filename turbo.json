@@ -1,0 +1,26 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "preview": {},
+    "build": {
+      "outputs": ["dist/**", "storybook-static/**"],
+      "dependsOn": ["^build"]
+    },
+    "test": {},
+    "test:report": {
+      "outputs": ["reports/**"]
+    },
+    "lint": {},
+    "lint:report": {
+      "outputs": ["reports/**"]
+    },
+    "lint:fix": {},
+    "clean": {
+      "cache": false
+    }
+  }
+}

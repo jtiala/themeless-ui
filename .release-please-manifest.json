@@ -1,0 +1,11 @@
+{
+  ".": "0.0.0",
+  "apps/docs": "0.0.0",
+  "packages/eslint-config": "0.0.0",
+  "packages/react": "0.0.0",
+  "packages/style": "0.0.0",
+  "packages/stylelint-config": "0.0.0",
+  "packages/theme-default": "0.0.0",
+  "packages/typescript-config": "0.0.0",
+  "packages/utils": "0.0.0"
+}

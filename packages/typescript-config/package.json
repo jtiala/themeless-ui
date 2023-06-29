@@ -1,0 +1,24 @@
+{
+  "name": "@themeless-ui/typescript-config",
+  "version": "0.0.0",
+  "description": "TypeScript configuration for ThemelessUI",
+  "keywords": [
+    "typescript",
+    "typescript-config",
+    "typescriptconfig",
+    "tsconfig"
+  ],
+  "author": "Joonas Tiala <joonas.tiala@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jtiala/themeless-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtiala/themeless-ui",
+    "directory": "packages/typescript-config"
+  },
+  "files": [
+    "*.json",
+    "CHANGELOG.md"
+  ],
+  "packageManager": "pnpm@8.6.5"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@themeless-ui/eslint-config",
+  "version": "0.0.0",
+  "description": "ESLint configuration for ThemelessUI",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslintconfig"
+  ],
+  "author": "Joonas Tiala <joonas.tiala@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jtiala/themeless-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtiala/themeless-ui",
+    "directory": "packages/eslint-config"
+  },
+  "main": "index.json",
+  "files": [
+    "index.json",
+    "CHANGELOG.md"
+  ],
+  "packageManager": "pnpm@8.6.5",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.60.1",
+    "@typescript-eslint/parser": "5.60.1",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-config-turbo": "1.10.6",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-storybook": "0.6.12"
+  }
+}
