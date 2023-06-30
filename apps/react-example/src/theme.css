@@ -1,0 +1,16 @@
+/* ThemelessUI custom theme example */
+:root {
+  /* Spacing */
+  --tui__spacing-unit: 0.0625rem; /* 1px on 16px base */
+
+  /* Typography */
+  --tui__font-size-base: 1rem;
+  --tui__line-height-base: 1.5;
+  --tui__font-family-sans: "Open Sans", sans-serif;
+  --tui__font-family-serif: "Karma", serif;
+  --tui__font-family-monospace: "Fira Code", monospace;
+}
+
+.tui__heading {
+  font-family: var(--tui__font-family-sans);
+}

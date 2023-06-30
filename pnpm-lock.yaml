@@ -100,6 +100,88 @@ importers:
         specifier: 4.3.9
         version: 4.3.9(@types/node@20.3.2)
 
+  apps/react-example:
+    dependencies:
+      '@fontsource/fira-mono':
+        specifier: 5.0.3
+        version: 5.0.3
+      '@fontsource/karma':
+        specifier: 5.0.3
+        version: 5.0.3
+      '@fontsource/open-sans':
+        specifier: 5.0.3
+        version: 5.0.3
+      '@themeless-ui/react':
+        specifier: workspace:*
+        version: link:../../packages/react
+      '@themeless-ui/style':
+        specifier: workspace:*
+        version: link:../../packages/style
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: 18.2.0
+        version: 18.2.0(react@18.2.0)
+    devDependencies:
+      '@testing-library/jest-dom':
+        specifier: 5.16.5
+        version: 5.16.5
+      '@testing-library/react':
+        specifier: 14.0.0
+        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@testing-library/user-event':
+        specifier: 14.4.3
+        version: 14.4.3(@testing-library/dom@9.3.1)
+      '@themeless-ui/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@themeless-ui/stylelint-config':
+        specifier: workspace:*
+        version: link:../../packages/stylelint-config
+      '@themeless-ui/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@types/react':
+        specifier: 18.2.14
+        version: 18.2.14
+      '@types/react-dom':
+        specifier: 18.2.6
+        version: 18.2.6
+      '@types/react-test-renderer':
+        specifier: 18.0.0
+        version: 18.0.0
+      '@vitejs/plugin-react':
+        specifier: 4.0.1
+        version: 4.0.1(vite@4.3.9)
+      '@vitest/coverage-v8':
+        specifier: 0.32.2
+        version: 0.32.2(vitest@0.32.2)
+      eslint:
+        specifier: 8.43.0
+        version: 8.43.0
+      jsdom:
+        specifier: 22.1.0
+        version: 22.1.0
+      react-test-renderer:
+        specifier: 18.2.0
+        version: 18.2.0(react@18.2.0)
+      stylelint:
+        specifier: 15.9.0
+        version: 15.9.0
+      typescript:
+        specifier: 5.1.6
+        version: 5.1.6
+      vite:
+        specifier: 4.3.9
+        version: 4.3.9(@types/node@20.3.2)
+      vite-plugin-dts:
+        specifier: 3.0.0-beta.3
+        version: 3.0.0-beta.3(typescript@5.1.6)
+      vitest:
+        specifier: 0.32.2
+        version: 0.32.2(jsdom@22.1.0)
+
   packages/eslint-config:
     devDependencies:
       '@typescript-eslint/eslint-plugin':
@@ -2965,6 +3047,18 @@ packages:
   /@fal-works/esbuild-plugin-global-externals@2.1.2:
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
     dev: true
+
+  /@fontsource/fira-mono@5.0.3:
+    resolution: {integrity: sha512-AN08SykeaFazTC0d0HHOZeQ3jmHyn2Qs5bGEjhxuNp9NjUqg9rL8x+LxrXWdVIo8PBg0xbnkcA3KR6RVvQeRAg==}
+    dev: false
+
+  /@fontsource/karma@5.0.3:
+    resolution: {integrity: sha512-RyWjMmHVRlEXSsjL3xuNJJRjspSdR7hfqAw2xstvimDMPXM4sHfi/tFb25PSnGTnUsAWLftripu5quw1jdDr9A==}
+    dev: false
+
+  /@fontsource/open-sans@5.0.3:
+    resolution: {integrity: sha512-L86qrEfW7IWSGojCtiPpw2/M6qKjxDG+EV4k1xMVFCkhh6Z6gyZwevqCt0yOvd1BmjrtUAIAfSzFTjBn3DeZJw==}
+    dev: false
 
   /@hapi/hoek@9.3.0:
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
