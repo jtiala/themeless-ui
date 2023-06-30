@@ -1,6 +1,6 @@
 {
   "name": "@themeless-ui/stylelint-config",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Stylelint configuration for ThemelessUI",
   "keywords": [
     "stylelint",
