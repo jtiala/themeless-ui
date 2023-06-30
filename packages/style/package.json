@@ -42,7 +42,8 @@
     "lint:stylelint": "stylelint \"**/*.css\"",
     "lint:stylelint:report": "stylelint -f json -o ./reports/lint-report-stylelint.json \"**/*.css\"",
     "lint:stylelint:fix": "stylelint \"**/*.css\" --fix",
-    "clean": "rm -rf dist reports node_modules .turbo"
+    "clean": "rm -rf dist reports node_modules .turbo",
+    "publish:npm": "pnpm publish --access public"
   },
   "dependencies": {
     "@themeless-ui/theme-default": "workspace:*"

@@ -4,48 +4,39 @@
   "packages": {
     ".": {
       "component": "themeless-ui",
-      "bump-minor-pre-major": true,
-      "release-as": "0.1.0"
+      "bump-minor-pre-major": true
     },
     "apps/docs": {
       "component": "@themeless-ui/docs",
-      "bump-minor-pre-major": true,
-      "release-as": "0.1.0"
+      "bump-minor-pre-major": true
     },
     "packages/eslint-config": {
       "component": "@themeless-ui/eslint-config",
-      "bump-minor-pre-major": true,
-      "release-as": "0.1.0"
+      "bump-minor-pre-major": true
     },
     "packages/react": {
       "component": "@themeless-ui/react",
-      "bump-minor-pre-major": true,
-      "release-as": "0.1.0"
+      "bump-minor-pre-major": true
     },
     "packages/style": {
       "component": "@themeless-ui/style",
-      "bump-minor-pre-major": true,
-      "release-as": "0.1.0"
+      "bump-minor-pre-major": true
     },
     "packages/stylelint-config": {
       "component": "@themeless-ui/stylelint-config",
-      "bump-minor-pre-major": true,
-      "release-as": "0.1.0"
+      "bump-minor-pre-major": true
     },
     "packages/theme-default": {
       "component": "@themeless-ui/theme-default",
-      "bump-minor-pre-major": true,
-      "release-as": "0.1.0"
+      "bump-minor-pre-major": true
     },
     "packages/typescript-config": {
       "component": "@themeless-ui/typescript-config",
-      "bump-minor-pre-major": true,
-      "release-as": "0.1.0"
+      "bump-minor-pre-major": true
     },
     "packages/utils": {
       "component": "@themeless-ui/utils",
-      "bump-minor-pre-major": true,
-      "release-as": "0.1.0"
+      "bump-minor-pre-major": true
     }
   },
   "plugins": [

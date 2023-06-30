@@ -21,6 +21,9 @@
     "lint:fix": {},
     "clean": {
       "cache": false
+    },
+    "publish:npm": {
+      "cache": false
     }
   }
 }

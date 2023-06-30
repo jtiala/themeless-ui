@@ -30,7 +30,8 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "upgrade": "ncu -ui && ncu -ui --packageFile **/packages/**/package.json && ncu -ui --packageFile **/apps/**/package.json"
+    "upgrade": "ncu -ui && ncu -ui --packageFile **/packages/**/package.json && ncu -ui --packageFile **/apps/**/package.json",
+    "publish:npm": "turbo run publish:npm"
   },
   "devDependencies": {
     "@themeless-ui/eslint-config": "workspace:*",

@@ -39,7 +39,8 @@
     "lint:eslint": "eslint \"**/*.{ts,tsx}\"",
     "lint:eslint:report": "eslint -f json -o ./reports/lint-report-eslint.json \"**/*.{ts,tsx}\"",
     "lint:eslint:fix": "eslint --fix \"**/*.{ts,tsx}\"",
-    "clean": "rm -rf storybook-static reports node_modules .turbo"
+    "clean": "rm -rf storybook-static reports node_modules .turbo",
+    "publish:npm": "pnpm publish --access public"
   },
   "dependencies": {
     "@themeless-ui/react": "workspace:*",

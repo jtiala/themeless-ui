@@ -21,6 +21,9 @@
     "CHANGELOG.md"
   ],
   "packageManager": "pnpm@8.6.5",
+  "scripts": {
+    "publish:npm": "pnpm publish --access public"
+  },
   "devDependencies": {
     "stylelint": "15.9.0",
     "stylelint-config-idiomatic-order": "9.0.0",

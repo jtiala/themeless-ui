@@ -46,7 +46,8 @@
     "lint:eslint": "eslint \"**/*.{ts,tsx}\"",
     "lint:eslint:report": "eslint -f json -o ./reports/lint-report-eslint.json \"**/*.{ts,tsx}\"",
     "lint:eslint:fix": "eslint --fix \"**/*.{ts,tsx}\"",
-    "clean": "rm -rf dist reports node_modules .turbo"
+    "clean": "rm -rf dist reports node_modules .turbo",
+    "publish:npm": "pnpm publish --access public"
   },
   "peerDependencies": {
     "react": "^18",
