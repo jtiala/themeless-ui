@@ -1,0 +1,76 @@
+{
+  "name": "@themeless-ui/react-example",
+  "version": "0.0.0",
+  "description": "ThemelessUI example React app",
+  "keywords": [
+    "react"
+  ],
+  "author": "Joonas Tiala <joonas.tiala@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jtiala/themeless-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtiala/themeless-ui",
+    "directory": "apps/react-example"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "packageManager": "pnpm@8.6.5",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "pnpm run test:vitest",
+    "test:report": "pnpm run test:vitest:report",
+    "test:vitest": "vitest run",
+    "test:vitest:watch": "vitest",
+    "test:vitest:report": "vitest run --coverage --reporter default --reporter junit --outputFile ./reports/test-report-vitest.xml",
+    "test:vitest:update": "vitest run --update",
+    "lint": "pnpm run lint:tsc && pnpm run lint:eslint && pnpm run lint:stylelint",
+    "lint:report": "pnpm run lint:tsc:report && pnpm run lint:eslint:report && pnpm run lint:stylelint:report",
+    "lint:fix": "pnpm run lint:eslint:fix && pnpm run lint:stylelint:fix",
+    "lint:tsc": "tsc",
+    "lint:tsc:report": "mkdir -p ./reports && tsc > ./reports/lint-report-tsc.txt",
+    "lint:eslint": "eslint \"**/*.{ts,tsx}\"",
+    "lint:eslint:report": "eslint -f json -o ./reports/lint-report-eslint.json \"**/*.{ts,tsx}\"",
+    "lint:eslint:fix": "eslint --fix \"**/*.{ts,tsx}\"",
+    "lint:stylelint": "stylelint \"**/*.css\"",
+    "lint:stylelint:report": "stylelint -f json -o ./reports/lint-report-stylelint.json \"**/*.css\"",
+    "lint:stylelint:fix": "stylelint \"**/*.css\" --fix",
+    "clean": "rm -rf dist reports node_modules .turbo",
+    "publish:npm": "pnpm publish --access public"
+  },
+  "dependencies": {
+    "@fontsource/fira-mono": "5.0.3",
+    "@fontsource/karma": "5.0.3",
+    "@fontsource/open-sans": "5.0.3",
+    "@themeless-ui/react": "workspace:*",
+    "@themeless-ui/style": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.4.3",
+    "@themeless-ui/eslint-config": "workspace:*",
+    "@themeless-ui/stylelint-config": "workspace:*",
+    "@themeless-ui/typescript-config": "workspace:*",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "@types/react-test-renderer": "18.0.0",
+    "@vitejs/plugin-react": "4.0.1",
+    "@vitest/coverage-v8": "0.32.2",
+    "eslint": "8.43.0",
+    "jsdom": "22.1.0",
+    "react-test-renderer": "18.2.0",
+    "stylelint": "15.9.0",
+    "typescript": "5.1.6",
+    "vite-plugin-dts": "3.0.0-beta.3",
+    "vite": "4.3.9",
+    "vitest": "0.32.2"
+  }
+}

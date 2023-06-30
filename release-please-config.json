@@ -10,6 +10,10 @@
       "component": "@themeless-ui/docs",
       "bump-minor-pre-major": true
     },
+    "apps/react-example": {
+      "component": "@themeless-ui/react-example",
+      "bump-minor-pre-major": true
+    },
     "packages/eslint-config": {
       "component": "@themeless-ui/eslint-config",
       "bump-minor-pre-major": true
@@ -46,6 +50,7 @@
       "components": [
         "themeless-ui",
         "@themeless-ui/docs",
+        "@themeless-ui/react-example",
         "@themeless-ui/eslint-config",
         "@themeless-ui/react",
         "@themeless-ui/style",
