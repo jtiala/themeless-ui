@@ -1,7 +1,7 @@
 {
   ".": "0.2.0",
   "apps/docs": "0.2.0",
-  "apps/react-example": "0.0.0",
+  "apps/react-example": "0.2.0",
   "packages/eslint-config": "0.2.0",
   "packages/react": "0.2.0",
   "packages/style": "0.2.0",
