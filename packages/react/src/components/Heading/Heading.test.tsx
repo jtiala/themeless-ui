@@ -38,7 +38,7 @@ describe("Heading", async () => {
       render(
         <Heading level={level} testId="heading">
           Heading {level}
-        </Heading>
+        </Heading>,
       );
 
       const heading = screen.getByTestId("heading");

@@ -1,6 +1,14 @@
-import { Meta, Markdown } from "@storybook/blocks";
-import Readme from "../../../README.md?raw";
+import { Meta } from "@storybook/blocks";
 
 <Meta title="Introduction" />
 
-<Markdown>{Readme}</Markdown>
+# ⬜️ ThemelessUI
+
+ThemelessUI is a React component library, currently in very early development. The main design principles of the library are:
+
+- ⬜️ Comes with very **minimal base theme**
+  - Basically just a CSS reset
+  - Not quite _headless_ but almost _themeless_
+- 🎨 Themeable with **CSS custom properties** (= CSS variables) and by targeting CSS classes
+  - Since the styling is done with CSS-not-in-JS, you can easily use any build tools for optimizing your CSS
+- ♿️ Fully **accessible**

@@ -1,0 +1,41 @@
+# Development
+
+This is a guide for setting up development environment for working on ThemelessUI.
+
+The project is organized as a monorepo powered by [Turborepo](https://turbo.build/repo) and [pnpm](https://pnpm.io).
+
+## Pre-requisites
+
+- [git](https://git-scm.com)
+- [Node.js](https://nodejs.org) (see correct version in `.nvmrc` or use [nvm](https://github.com/nvm-sh/nvm))
+- [pnpm](https://pnpm.io)
+
+## Getting started
+
+1. Install dependencies
+
+   ```console
+   pnpm install
+   ```
+
+2. Start the development environment
+
+   ```console
+   pnpm run dev
+   ```
+
+## Testing, linting and formatting
+
+Tests, linters and formatters can be run for all the packages by running the next commands in the root directory. The same commands can be also used in the package subdirectories.
+
+```
+pnpm run test
+pnpm run lint
+pnpm run format
+```
+
+Linters and formatters are also run in a pre-commit hook for all the staged files.
+
+## Conventional Commits
+
+The project follows the [Conventional Commits](https://www.conventionalcommits.org) specification and it's enforced with [commitlint](https://commitlint.js.org). The commit message format is important, because changelogs and releases are generated automatically using information provided in the messages.

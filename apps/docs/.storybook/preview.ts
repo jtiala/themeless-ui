@@ -5,7 +5,7 @@ const preview: Preview = {
   parameters: {
     options: {
       storySort: {
-        order: ["Introduction", "Typography", "Form"],
+        order: ["Introduction", "Development", "Typography", "Form"],
       },
     },
     actions: { argTypesRegex: "^on[A-Z].*" },

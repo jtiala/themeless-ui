@@ -17,7 +17,7 @@
   "files": [
     "CHANGELOG.md"
   ],
-  "packageManager": "pnpm@8.6.5",
+  "packageManager": "pnpm@8.6.10",
   "scripts": {
     "dev": "turbo run dev --no-cache --continue",
     "build": "turbo run build",
@@ -31,13 +31,18 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "upgrade": "ncu -ui && ncu -ui --packageFile **/packages/**/package.json && ncu -ui --packageFile **/apps/**/package.json",
-    "publish:npm": "pnpm publish && turbo run publish:npm"
+    "publish:npm": "pnpm publish && turbo run publish:npm",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "17.6.7",
+    "@commitlint/config-conventional": "17.6.7",
     "@themeless-ui/eslint-config": "workspace:*",
-    "eslint": "8.43.0",
-    "npm-check-updates": "16.10.13",
-    "prettier": "2.8.8",
-    "turbo": "1.10.6"
+    "eslint": "8.45.0",
+    "husky": "8.0.3",
+    "lint-staged": "13.2.3",
+    "npm-check-updates": "16.10.16",
+    "prettier": "3.0.0",
+    "turbo": "1.10.9"
   }
 }

@@ -20,7 +20,7 @@
     "*.json",
     "CHANGELOG.md"
   ],
-  "packageManager": "pnpm@8.6.5",
+  "packageManager": "pnpm@8.6.10",
   "scripts": {
     "publish:npm": "pnpm publish --access public"
   }

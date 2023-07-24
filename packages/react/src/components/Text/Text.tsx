@@ -129,6 +129,6 @@ export function Text({ type, children, testId, ...rest }: TextProps) {
   return createElement(
     type || "span",
     { className, ...rest, "data-testid": testId },
-    children
+    children,
   );
 }

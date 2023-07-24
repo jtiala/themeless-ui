@@ -26,6 +26,6 @@ export function Heading({ level, children, testId, ...rest }: HeadingProps) {
   return createElement(
     element,
     { className, ...rest, "data-testid": testId },
-    children
+    children,
   );
 }
