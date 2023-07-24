@@ -1,4 +1,4 @@
-import { Heading, Paragraph, Text } from "@themeless-ui/react";
+import { Blockquote, Heading, Paragraph, Text } from "@themeless-ui/react";
 
 export function TypographyExample() {
   return (
@@ -45,6 +45,21 @@ export function TypographyExample() {
         eget justo sed, auctor fringilla metus. Mauris augue nunc, lobortis in
         lectus vel, faucibus posuere velit.
       </Paragraph>
+      <Blockquote
+        cite="https://source-of-the-quote.example.com"
+        author="Samuel L. Ipsum"
+        source="Lorem Ipsum"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan
+        ex vel lacinia volutpat. Ut ultricies, mauris et varius finibus, nulla
+        ante efficitur libero, eget convallis odio ex ut neque. Praesent quis
+        odio ac felis pretium pharetra sit amet quis neque. Nam nec libero
+        purus. Maecenas sagittis lobortis lacinia. Aliquam non vehicula metus.
+        Vivamus fringilla ante eget leo pretium cursus. Morbi venenatis diam
+        metus, ut faucibus dolor mollis a. Nulla nec ex sapien. Curabitur a
+        tempor est. Mauris faucibus congue mi, sit amet pulvinar justo porttitor
+        nec. Nunc et eros a est fermentum lacinia id at nisi.
+      </Blockquote>
       <Paragraph>
         Etiam porta purus a aliquam rutrum. Vivamus finibus sed metus et
         vestibulum. Ut ornare eget mi nec congue. Nunc et dui sed diam viverra
