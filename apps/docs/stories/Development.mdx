@@ -28,13 +28,23 @@ The project is organized as a monorepo powered by [Turborepo](https://turbo.buil
 
 Tests, linters and formatters can be run for all the packages by running the next commands in the root directory. The same commands can be also used in the package subdirectories.
 
-```
+```console
 pnpm run test
 pnpm run lint
 pnpm run format
 ```
 
 Linters and formatters are also run in a pre-commit hook for all the staged files.
+
+## Building
+
+To build the library, use the following command.
+
+```console
+pnpm run build
+```
+
+_Note:_ Building is required to use new code from one package in another one locally. For example, if a new component is added in `packages/react`, a build is required to use the component in `apps/docs`.
 
 ## Conventional Commits
 
