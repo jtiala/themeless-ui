@@ -31,7 +31,8 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "upgrade": "ncu -ui && ncu -ui --packageFile **/packages/**/package.json && ncu -ui --packageFile **/apps/**/package.json",
-    "publish:npm": "pnpm publish && turbo run publish:npm"
+    "publish:npm": "pnpm publish && turbo run publish:npm",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.7",
@@ -39,6 +40,7 @@
     "@themeless-ui/eslint-config": "workspace:*",
     "eslint": "8.43.0",
     "husky": "8.0.3",
+    "lint-staged": "13.2.3",
     "npm-check-updates": "16.10.13",
     "prettier": "2.8.8",
     "turbo": "1.10.6"
