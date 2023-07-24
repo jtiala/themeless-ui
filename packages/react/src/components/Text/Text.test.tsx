@@ -56,7 +56,7 @@ describe("Text", async () => {
       render(
         <Text type={type} testId="text">
           {type}
-        </Text>
+        </Text>,
       );
 
       const text = screen.getByTestId("text");

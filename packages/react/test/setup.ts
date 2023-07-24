@@ -16,7 +16,7 @@ afterEach(() => {
 
 function customRender(
   ui: React.ReactElement,
-  options: RenderOptions = {}
+  options: RenderOptions = {},
 ): RenderResult {
   return render(ui, {
     // wrap providers here if needed
