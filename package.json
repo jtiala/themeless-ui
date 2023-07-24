@@ -34,8 +34,11 @@
     "publish:npm": "pnpm publish && turbo run publish:npm"
   },
   "devDependencies": {
+    "@commitlint/cli": "17.6.7",
+    "@commitlint/config-conventional": "17.6.7",
     "@themeless-ui/eslint-config": "workspace:*",
     "eslint": "8.43.0",
+    "husky": "8.0.3",
     "npm-check-updates": "16.10.13",
     "prettier": "2.8.8",
     "turbo": "1.10.6"
