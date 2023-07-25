@@ -20,12 +20,8 @@ const className = cn("heading");
 /**
  * Display a section heading.
  */
-export function Heading({ level, children, testId, ...rest }: HeadingProps) {
+export function Heading({ level, children, testId }: HeadingProps) {
   const element = "h" + level;
 
-  return createElement(
-    element,
-    { className, ...rest, "data-testid": testId },
-    children,
-  );
+  return createElement(element, { className, "data-testid": testId }, children);
 }

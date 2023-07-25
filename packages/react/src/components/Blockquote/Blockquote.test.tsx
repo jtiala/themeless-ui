@@ -36,13 +36,11 @@ const elementWithoutAuthor = (
 );
 
 describe("Blockquote", async () => {
-  it("should match the snapshot", () => {
-    const component = renderer.create(elementDefault);
-    expect(componentToJson(component)).toMatchSnapshot();
-  });
+  it("should render default blockquote", () => {
+    expect(componentToJson(renderer.create(elementDefault))).toMatchSnapshot();
 
-  it("should render the blockquote", () => {
     render(elementDefault);
+
     const blockquote = screen.getByTestId("blockquote");
     const footer = blockquote.querySelector("footer");
 
@@ -53,7 +51,12 @@ describe("Blockquote", async () => {
   });
 
   it("should render author without source", () => {
+    expect(
+      componentToJson(renderer.create(elementWithoutSource)),
+    ).toMatchSnapshot();
+
     render(elementWithoutSource);
+
     const blockquote = screen.getByTestId("blockquote");
     const footer = blockquote.querySelector("footer");
 
@@ -61,7 +64,12 @@ describe("Blockquote", async () => {
   });
 
   it("should render source without author", () => {
+    expect(
+      componentToJson(renderer.create(elementWithoutAuthor)),
+    ).toMatchSnapshot();
+
     render(elementWithoutAuthor);
+
     const blockquote = screen.getByTestId("blockquote");
     const footer = blockquote.querySelector("footer");
 

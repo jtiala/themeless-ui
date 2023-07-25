@@ -1,4 +1,10 @@
-import { Blockquote, Heading, Paragraph, Text } from "@themeless-ui/react";
+import {
+  Blockquote,
+  Heading,
+  List,
+  Paragraph,
+  Text,
+} from "@themeless-ui/react";
 
 export function TypographyExample() {
   return (
@@ -111,6 +117,11 @@ export function TypographyExample() {
         Etiam ut consequat lorem, eget posuere dui. Sed enim massa, ornare ac
         ipsum venenatis, convallis luctus arcu. Ut vel consectetur arcu.
       </Paragraph>
+      <List>
+        <List.Item>Lorem ipsum</List.Item>
+        <List.Item>Dolor sit amet</List.Item>
+        <List.Item>Consectetur adipiscing elit</List.Item>
+      </List>
       <Paragraph>
         Suspendisse convallis mi sed metus consectetur euismod. Proin vel libero
         nisi. Curabitur nec nunc eget mauris tempus consectetur. Sed et elit at

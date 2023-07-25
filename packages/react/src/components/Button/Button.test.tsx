@@ -27,13 +27,11 @@ const element = (
 );
 
 describe("Button", async () => {
-  it("should match the snapshot", () => {
-    const component = renderer.create(element);
-    expect(componentToJson(component)).toMatchSnapshot();
-  });
-
   it("should render the button", () => {
+    expect(componentToJson(renderer.create(element))).toMatchSnapshot();
+
     render(element);
+
     expect(screen.getByTestId("button")).toBeInTheDocument();
   });
 

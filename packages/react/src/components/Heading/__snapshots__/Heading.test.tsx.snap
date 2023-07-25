@@ -1,6 +1,66 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Heading > should match the snapshot 1`] = `
+exports[`Heading > should render correct html element 1`] = `
+<h1
+  className="tui__heading"
+  data-testid="heading"
+>
+  Heading 
+  1
+</h1>
+`;
+
+exports[`Heading > should render correct html element 2`] = `
+<h2
+  className="tui__heading"
+  data-testid="heading"
+>
+  Heading 
+  2
+</h2>
+`;
+
+exports[`Heading > should render correct html element 3`] = `
+<h3
+  className="tui__heading"
+  data-testid="heading"
+>
+  Heading 
+  3
+</h3>
+`;
+
+exports[`Heading > should render correct html element 4`] = `
+<h4
+  className="tui__heading"
+  data-testid="heading"
+>
+  Heading 
+  4
+</h4>
+`;
+
+exports[`Heading > should render correct html element 5`] = `
+<h5
+  className="tui__heading"
+  data-testid="heading"
+>
+  Heading 
+  5
+</h5>
+`;
+
+exports[`Heading > should render correct html element 6`] = `
+<h6
+  className="tui__heading"
+  data-testid="heading"
+>
+  Heading 
+  6
+</h6>
+`;
+
+exports[`Heading > should render the heading 1`] = `
 <h1
   className="tui__heading"
   data-testid="heading"

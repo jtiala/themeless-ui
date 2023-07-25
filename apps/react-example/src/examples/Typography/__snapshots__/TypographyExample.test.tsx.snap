@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`TypographyExample > should match the snapshot 1`] = `
+exports[`TypographyExample > should render the example 1`] = `
 <article
   data-testid="typographyExample"
 >
@@ -111,6 +111,19 @@ exports[`TypographyExample > should match the snapshot 1`] = `
   >
     Vivamus lacinia semper dolor, et vehicula velit condimentum sed. Proin consequat tellus ac arcu tincidunt aliquet. Ut bibendum sodales justo, in malesuada nulla semper non. Morbi lectus diam, tincidunt varius magna id, congue semper ipsum. Vestibulum nisi eros, aliquet mollis scelerisque ac, aliquam non magna. Suspendisse nec mi cursus, fermentum velit nec, sollicitudin enim. Maecenas elementum in velit vitae viverra. Etiam ut consequat lorem, eget posuere dui. Sed enim massa, ornare ac ipsum venenatis, convallis luctus arcu. Ut vel consectetur arcu.
   </p>
+  <ul
+    className="tui__list"
+  >
+    <li>
+      Lorem ipsum
+    </li>
+    <li>
+      Dolor sit amet
+    </li>
+    <li>
+      Consectetur adipiscing elit
+    </li>
+  </ul>
   <p
     className="tui__paragraph"
   >

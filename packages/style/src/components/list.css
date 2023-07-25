@@ -1,0 +1,25 @@
+.tui__list {
+  display: block;
+  box-sizing: border-box;
+  padding-left: var(--tui__spacing-32);
+  margin: var(--tui__spacing-16) 0;
+}
+
+ul.tui__list {
+  list-style-type: disc;
+}
+
+ol.tui__list {
+  list-style-type: decimal;
+}
+
+.tui__list li {
+  box-sizing: border-box;
+  color: var(--tui__color-black);
+  font-family: var(--tui__font-family-serif);
+  font-size: var(--tui__font-size-medium);
+  -webkit-font-smoothing: var(--tui__font-smoothing-webkit);
+  -moz-osx-font-smoothing: var(--tui__font-smoothing-moz);
+  line-height: var(--tui__line-height-md);
+  overflow-wrap: break-word;
+}

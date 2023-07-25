@@ -1,6 +1,186 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Text > should match the snapshot 1`] = `
+exports[`Text > should render correct html element 1`] = `
+<abbr
+  className="tui__text"
+  data-testid="text"
+>
+  abbr
+</abbr>
+`;
+
+exports[`Text > should render correct html element 2`] = `
+<b
+  className="tui__text"
+  data-testid="text"
+>
+  b
+</b>
+`;
+
+exports[`Text > should render correct html element 3`] = `
+<cite
+  className="tui__text"
+  data-testid="text"
+>
+  cite
+</cite>
+`;
+
+exports[`Text > should render correct html element 4`] = `
+<code
+  className="tui__text"
+  data-testid="text"
+>
+  code
+</code>
+`;
+
+exports[`Text > should render correct html element 5`] = `
+<del
+  className="tui__text"
+  data-testid="text"
+>
+  del
+</del>
+`;
+
+exports[`Text > should render correct html element 6`] = `
+<em
+  className="tui__text"
+  data-testid="text"
+>
+  em
+</em>
+`;
+
+exports[`Text > should render correct html element 7`] = `
+<i
+  className="tui__text"
+  data-testid="text"
+>
+  i
+</i>
+`;
+
+exports[`Text > should render correct html element 8`] = `
+<ins
+  className="tui__text"
+  data-testid="text"
+>
+  ins
+</ins>
+`;
+
+exports[`Text > should render correct html element 9`] = `
+<kbd
+  className="tui__text"
+  data-testid="text"
+>
+  kbd
+</kbd>
+`;
+
+exports[`Text > should render correct html element 10`] = `
+<mark
+  className="tui__text"
+  data-testid="text"
+>
+  mark
+</mark>
+`;
+
+exports[`Text > should render correct html element 11`] = `
+<q
+  className="tui__text"
+  data-testid="text"
+>
+  q
+</q>
+`;
+
+exports[`Text > should render correct html element 12`] = `
+<s
+  className="tui__text"
+  data-testid="text"
+>
+  s
+</s>
+`;
+
+exports[`Text > should render correct html element 13`] = `
+<samp
+  className="tui__text"
+  data-testid="text"
+>
+  samp
+</samp>
+`;
+
+exports[`Text > should render correct html element 14`] = `
+<small
+  className="tui__text"
+  data-testid="text"
+>
+  small
+</small>
+`;
+
+exports[`Text > should render correct html element 15`] = `
+<span
+  className="tui__text"
+  data-testid="text"
+>
+  span
+</span>
+`;
+
+exports[`Text > should render correct html element 16`] = `
+<strong
+  className="tui__text"
+  data-testid="text"
+>
+  strong
+</strong>
+`;
+
+exports[`Text > should render correct html element 17`] = `
+<sub
+  className="tui__text"
+  data-testid="text"
+>
+  sub
+</sub>
+`;
+
+exports[`Text > should render correct html element 18`] = `
+<sup
+  className="tui__text"
+  data-testid="text"
+>
+  sup
+</sup>
+`;
+
+exports[`Text > should render correct html element 19`] = `
+<u
+  className="tui__text"
+  data-testid="text"
+>
+  u
+</u>
+`;
+
+exports[`Text > should render correct html element 20`] = `
+<var
+  className="tui__text"
+  data-testid="text"
+>
+  var
+</var>
+`;
+
+exports[`Text > should render the text 1`] = `
 <span
   className="tui__text"
   data-testid="text"

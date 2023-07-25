@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Paragraph > should match the snapshot 1`] = `
+exports[`Paragraph > should render the paragraph 1`] = `
 <p
   className="tui__paragraph"
   data-testid="paragraph"
