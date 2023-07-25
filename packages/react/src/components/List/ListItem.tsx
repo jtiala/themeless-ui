@@ -9,7 +9,7 @@ export type ListItemProps = {
 } & CommonComponentProps;
 
 /**
- * Display a text ListItem.
+ * Display a list item.
  */
 export function ListItem({ children, testId }: ListItemProps) {
   return <li data-testid={testId}>{children}</li>;
