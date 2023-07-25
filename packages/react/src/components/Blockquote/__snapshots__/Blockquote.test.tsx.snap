@@ -49,7 +49,7 @@ exports[`Blockquote > should render default blockquote 1`] = `
       Samuel L. Ipsum
     </span>
     <span>
-      ,
+      , 
     </span>
     <cite
       className="tui__blockquote-source"
