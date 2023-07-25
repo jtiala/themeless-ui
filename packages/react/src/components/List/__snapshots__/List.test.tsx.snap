@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`List > should render ordered list 1`] = `
+<ol
+  className="tui__list"
+  data-testid="list"
+>
+  <li>
+    Lorem ipsum
+  </li>
+  <li>
+    Dolor sit amet
+  </li>
+  <li>
+    Consectetur adipiscing elit
+  </li>
+</ol>
+`;
+
+exports[`List > should render unordered list 1`] = `
+<ul
+  className="tui__list"
+  data-testid="list"
+>
+  <li>
+    Lorem ipsum
+  </li>
+  <li>
+    Dolor sit amet
+  </li>
+  <li>
+    Consectetur adipiscing elit
+  </li>
+</ul>
+`;
