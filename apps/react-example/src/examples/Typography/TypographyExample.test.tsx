@@ -10,13 +10,13 @@ import {
 import { TypographyExample } from "./TypographyExample";
 
 describe("TypographyExample", async () => {
-  it("should match the snapshot", () => {
-    const component = renderer.create(<TypographyExample />);
-    expect(componentToJson(component)).toMatchSnapshot();
-  });
+  it("should render the example", () => {
+    expect(
+      componentToJson(renderer.create(<TypographyExample />)),
+    ).toMatchSnapshot();
 
-  it("should render the component", () => {
     render(<TypographyExample />);
+
     const component = screen.getByTestId("typographyExample");
 
     expect(component).toBeInTheDocument();

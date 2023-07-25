@@ -17,13 +17,11 @@ const element = (
 );
 
 describe("Heading", async () => {
-  it("should match the snapshot", () => {
-    const component = renderer.create(element);
-    expect(componentToJson(component)).toMatchSnapshot();
-  });
-
   it("should render the heading", () => {
+    expect(componentToJson(renderer.create(element))).toMatchSnapshot();
+
     render(element);
+
     const heading = screen.getByTestId("heading");
 
     expect(heading).toBeInTheDocument();
@@ -35,11 +33,16 @@ describe("Heading", async () => {
 
     levels.forEach((level) => {
       cleanup();
-      render(
+
+      const element = (
         <Heading level={level} testId="heading">
           Heading {level}
-        </Heading>,
+        </Heading>
       );
+
+      expect(componentToJson(renderer.create(element))).toMatchSnapshot();
+
+      render(element);
 
       const heading = screen.getByTestId("heading");
       expect(heading).toBeInTheDocument();

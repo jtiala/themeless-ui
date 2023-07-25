@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`TypographyExample > should match the snapshot 1`] = `
+exports[`TypographyExample > should render the example 1`] = `
 <article
   data-testid="typographyExample"
 >

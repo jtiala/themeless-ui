@@ -14,13 +14,11 @@ const element = (
 );
 
 describe("Paragraph", async () => {
-  it("should match the snapshot", () => {
-    const component = renderer.create(element);
-    expect(componentToJson(component)).toMatchSnapshot();
-  });
-
   it("should render the paragraph", () => {
+    expect(componentToJson(renderer.create(element))).toMatchSnapshot();
+
     render(element);
+
     const paragraph = screen.getByTestId("paragraph");
 
     expect(paragraph).toBeInTheDocument();
