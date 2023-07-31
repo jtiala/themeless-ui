@@ -1,10 +1,3 @@
 {
-  "extends": "@themeless-ui/typescript-config/storybook.json",
-  "compilerOptions": {
-    "paths": {
-      // the packages are imported from src to get full source and comments available for Storybook
-      "@themeless-ui/react": ["../../packages/react/src"],
-      "@themeless-ui/style": ["../../packages/style/src"]
-    }
-  }
+  "extends": "@themeless-ui/typescript-config/storybook.json"
 }

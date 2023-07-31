@@ -41,6 +41,12 @@ importers:
 
   apps/docs:
     dependencies:
+      '@themeless-ui/react':
+        specifier: workspace:*
+        version: link:../../packages/react
+      '@themeless-ui/style':
+        specifier: workspace:*
+        version: link:../../packages/style
       react:
         specifier: 18.2.0
         version: 18.2.0
