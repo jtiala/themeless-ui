@@ -37,13 +37,13 @@
   "devDependencies": {
     "@commitlint/cli": "17.6.7",
     "@commitlint/config-conventional": "17.6.7",
-    "@playwright/test": "^1.36.2",
+    "@playwright/test": "1.36.2",
     "@themeless-ui/eslint-config": "workspace:*",
-    "eslint": "8.45.0",
+    "eslint": "8.46.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.3",
-    "npm-check-updates": "16.10.16",
+    "npm-check-updates": "16.10.17",
     "prettier": "3.0.0",
-    "turbo": "1.10.9"
+    "turbo": "1.10.12"
   }
 }
