@@ -1,0 +1,3 @@
+{
+  "extends": ["@themeless-ui/stylelint-config"]
+}

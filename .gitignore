@@ -1,5 +1,11 @@
 node_modules
+.cache
 .turbo
 dist
+out
+build
+*.tsbuildinfo
 storybook-static
 reports
+.next
+.contentlayer

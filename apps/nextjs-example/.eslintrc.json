@@ -1,0 +1,8 @@
+{
+  "root": true,
+  "extends": ["@themeless-ui/eslint-config/nextjs.json"],
+  "env": {
+    "browser": true,
+    "es2022": true
+  }
+}
