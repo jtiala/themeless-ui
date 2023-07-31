@@ -1,0 +1,12 @@
+.tui__stack {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.tui__stack-vertical {
+  flex-flow: column nowrap;
+}
+
+.tui__stack-horizontal {
+  flex-flow: row nowrap;
+}
