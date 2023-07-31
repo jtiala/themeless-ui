@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.4.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/docs-v0.3.0...@themeless-ui/docs-v0.4.0) (2023-07-31)
+
+
+### Features
+
+* add Anchor component ([4115edc](https://github.com/jtiala/themeless-ui/commit/4115edc0759bd2d17d3195a409dedc4536f283d4))
+* add blockquote component ([ccc84dd](https://github.com/jtiala/themeless-ui/commit/ccc84dd536f1977298aea11935ac471894da97c1))
+* add list component ([fdd3559](https://github.com/jtiala/themeless-ui/commit/fdd3559ab26a1e78d6f429fb2d09979b1b850a19))
+* add Stack component ([3e1439c](https://github.com/jtiala/themeless-ui/commit/3e1439c102a9ce23629356f38998439a95642ae3))
+
 ## [0.3.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/docs-v0.2.0...@themeless-ui/docs-v0.3.0) (2023-06-30)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/typescript-config-v0.3.0...@themeless-ui/typescript-config-v0.4.0) (2023-07-31)
+
+
+### Features
+
+* add nextjs example app ([61d782a](https://github.com/jtiala/themeless-ui/commit/61d782aaf31b90b6b8a38a548b1a80679839057b))
+
 ## [0.3.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/typescript-config-v0.2.0...@themeless-ui/typescript-config-v0.3.0) (2023-06-30)
 
 
