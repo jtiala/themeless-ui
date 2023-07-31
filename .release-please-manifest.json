@@ -1,12 +1,12 @@
 {
-  ".": "0.3.0",
-  "apps/docs": "0.3.0",
-  "apps/react-example": "0.3.0",
-  "packages/eslint-config": "0.3.0",
-  "packages/react": "0.3.0",
-  "packages/style": "0.3.0",
-  "packages/stylelint-config": "0.3.0",
-  "packages/theme-default": "0.3.0",
-  "packages/typescript-config": "0.3.0",
-  "packages/utils": "0.3.0"
+  ".": "0.4.0",
+  "apps/docs": "0.4.0",
+  "apps/react-example": "0.4.0",
+  "packages/eslint-config": "0.4.0",
+  "packages/react": "0.4.0",
+  "packages/style": "0.4.0",
+  "packages/stylelint-config": "0.4.0",
+  "packages/theme-default": "0.4.0",
+  "packages/typescript-config": "0.4.0",
+  "packages/utils": "0.4.0"
 }

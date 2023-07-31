@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/utils-v0.3.0...@themeless-ui/utils-v0.4.0) (2023-07-31)
+
+
+### Miscellaneous Chores
+
+* **@themeless-ui/utils:** Synchronize [@themeless-ui](https://github.com/themeless-ui) versions
+
 ## [0.3.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/utils-v0.2.0...@themeless-ui/utils-v0.3.0) (2023-06-30)
 
 
