@@ -5,6 +5,7 @@ dist
 out
 build
 *.tsbuildinfo
+vite.config.ts.timestamp-*
 storybook-static
 reports
 .next

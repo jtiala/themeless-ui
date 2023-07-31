@@ -11,6 +11,7 @@ const preview: Preview = {
           "Typography",
           "Navigation",
           "Form",
+          "Layout",
         ],
       },
     },

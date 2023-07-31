@@ -1,5 +1,5 @@
 import { mdxComponents } from "@/utils/mdx";
-import { Heading } from "@themeless-ui/react";
+import { Heading, Stack } from "@themeless-ui/react";
 import { allPosts } from "contentlayer/generated";
 import { format, parseISO } from "date-fns";
 import { getMDXComponent } from "next-contentlayer/hooks";
@@ -29,12 +29,14 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
   return (
     <article>
-      <Heading level={1}>{post.title}</Heading>
-      {/* TODO: Add `time` type to <Text> and use it here */}
-      <time dateTime={post.date}>
-        {format(parseISO(post.date), "LLLL d, yyyy")}
-      </time>
-      <Content components={mdxComponents} />
+      <Stack>
+        <Heading level={1}>{post.title}</Heading>
+        {/* TODO: Add `time` type to <Text> and use it here */}
+        <time dateTime={post.date}>
+          {format(parseISO(post.date), "LLLL d, yyyy")}
+        </time>
+        <Content components={mdxComponents} />
+      </Stack>
     </article>
   );
 }

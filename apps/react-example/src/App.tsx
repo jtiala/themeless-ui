@@ -1,4 +1,4 @@
-import { Heading, Text } from "@themeless-ui/react";
+import { Anchor, Heading, Stack, Text } from "@themeless-ui/react";
 import { TypographyExample } from "./examples/Typography/TypographyExample";
 
 export function App() {
@@ -11,23 +11,27 @@ export function App() {
         <TypographyExample />
       </main>
       <footer>
-        <Text>
-          <a
-            href="https://github.com/jtiala/themeless-ui"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-          {" | "}
-          <a
-            href="https://jtiala.github.io/themeless-ui"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Storybook
-          </a>
-        </Text>
+        <Stack direction="horizontal">
+          <Stack direction="horizontal">
+            <Text type="small">
+              <Anchor
+                href="https://github.com/jtiala/themeless-ui"
+                target="_blank"
+              >
+                GitHub
+              </Anchor>
+            </Text>
+            <Text type="small">&nbsp;|&nbsp;</Text>
+            <Text type="small">
+              <Anchor
+                href="https://jtiala.github.io/themeless-ui"
+                target="_blank"
+              >
+                Storybook
+              </Anchor>
+            </Text>
+          </Stack>
+        </Stack>
       </footer>
     </div>
   );
