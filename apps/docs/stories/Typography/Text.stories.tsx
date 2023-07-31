@@ -155,12 +155,12 @@ export const CombiningTextTypes = {
       <li>
         <Description>del and ins in cite</Description>
         <Text>
-          First verse of{" "}
+          Lorem ipsum{" "}
           <Text type="cite">
-            <Text type="del">Think</Text>
-            <Text type="ins">Respect</Text>
+            <Text type="del">dolor</Text>
+            <Text type="ins">sit amet</Text>
           </Text>
-          , by Aretha Franklin.
+          , consectetur adipiscing elit.
         </Text>
       </li>
       <li>

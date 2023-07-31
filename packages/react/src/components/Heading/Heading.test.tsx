@@ -10,7 +10,7 @@ import {
 } from "../../../test";
 import { Heading } from "./Heading";
 
-const element = (
+const defaultHeading = (
   <Heading level={1} testId="heading">
     Lorem ipsum dolor sit amet.
   </Heading>
@@ -18,9 +18,9 @@ const element = (
 
 describe("Heading", async () => {
   it("should render the heading", () => {
-    expect(componentToJson(renderer.create(element))).toMatchSnapshot();
+    expect(componentToJson(renderer.create(defaultHeading))).toMatchSnapshot();
 
-    render(element);
+    render(defaultHeading);
 
     const heading = screen.getByTestId("heading");
 

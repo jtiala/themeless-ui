@@ -17,19 +17,19 @@ const lipsum =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan ex vel lacinia volutpat. Ut ultricies, mauris et varius finibus, nulla ante efficitur libero, eget convallis odio ex ut neque. Praesent quis odio ac felis pretium pharetra sit amet quis neque. Nam nec libero purus. Maecenas sagittis lobortis lacinia. Aliquam non vehicula metus. Vivamus fringilla ante eget leo pretium cursus. Morbi venenatis diam metus, ut faucibus dolor mollis a. Nulla nec ex sapien. Curabitur a tempor est. Mauris faucibus congue mi, sit amet pulvinar justo porttitor nec. Nunc et eros a est fermentum lacinia id at nisi.";
 const children = <Paragraph>{lipsum}</Paragraph>;
 
-const elementDefault = (
+const defaultBlockquote = (
   <Blockquote testId="blockquote" cite={cite} author={author} source={source}>
     {children}
   </Blockquote>
 );
 
-const elementWithoutSource = (
+const blockquoteWithoutSource = (
   <Blockquote testId="blockquote" cite={cite} author={author}>
     {children}
   </Blockquote>
 );
 
-const elementWithoutAuthor = (
+const blockquoteWithoutAuthor = (
   <Blockquote testId="blockquote" cite={cite} source={source}>
     {children}
   </Blockquote>
@@ -37,9 +37,11 @@ const elementWithoutAuthor = (
 
 describe("Blockquote", async () => {
   it("should render default blockquote", () => {
-    expect(componentToJson(renderer.create(elementDefault))).toMatchSnapshot();
+    expect(
+      componentToJson(renderer.create(defaultBlockquote)),
+    ).toMatchSnapshot();
 
-    render(elementDefault);
+    render(defaultBlockquote);
 
     const blockquote = screen.getByTestId("blockquote");
     const footer = blockquote.querySelector("footer");
@@ -52,10 +54,10 @@ describe("Blockquote", async () => {
 
   it("should render author without source", () => {
     expect(
-      componentToJson(renderer.create(elementWithoutSource)),
+      componentToJson(renderer.create(blockquoteWithoutSource)),
     ).toMatchSnapshot();
 
-    render(elementWithoutSource);
+    render(blockquoteWithoutSource);
 
     const blockquote = screen.getByTestId("blockquote");
     const footer = blockquote.querySelector("footer");
@@ -65,10 +67,10 @@ describe("Blockquote", async () => {
 
   it("should render source without author", () => {
     expect(
-      componentToJson(renderer.create(elementWithoutAuthor)),
+      componentToJson(renderer.create(blockquoteWithoutAuthor)),
     ).toMatchSnapshot();
 
-    render(elementWithoutAuthor);
+    render(blockquoteWithoutAuthor);
 
     const blockquote = screen.getByTestId("blockquote");
     const footer = blockquote.querySelector("footer");
