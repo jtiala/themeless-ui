@@ -43,20 +43,18 @@
     "publish:npm": "pnpm publish --access public"
   },
   "dependencies": {
-    "@themeless-ui/react": "workspace:*",
-    "@themeless-ui/style": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "7.1.0",
-    "@storybook/addon-essentials": "7.1.0",
-    "@storybook/addon-interactions": "7.1.0",
-    "@storybook/addon-links": "7.1.0",
-    "@storybook/blocks": "7.1.0",
-    "@storybook/react-vite": "7.1.0",
-    "@storybook/react": "7.1.0",
-    "@storybook/test-runner": "0.11.0",
+    "@storybook/addon-a11y": "7.1.1",
+    "@storybook/addon-essentials": "7.1.1",
+    "@storybook/addon-interactions": "7.1.1",
+    "@storybook/addon-links": "7.1.1",
+    "@storybook/blocks": "7.1.1",
+    "@storybook/react-vite": "7.1.1",
+    "@storybook/react": "7.1.1",
+    "@storybook/test-runner": "0.12.0",
     "@storybook/testing-library": "0.2.0",
     "@themeless-ui/eslint-config": "workspace:*",
     "@themeless-ui/typescript-config": "workspace:*",
@@ -66,7 +64,7 @@
     "concurrently": "8.2.0",
     "eslint": "8.45.0",
     "serve": "14.2.0",
-    "storybook": "7.1.0",
+    "storybook": "7.1.1",
     "typescript": "5.1.6",
     "vite": "4.4.6"
   }
