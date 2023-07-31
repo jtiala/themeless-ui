@@ -10,13 +10,13 @@ import {
 } from "../../../test";
 import { Text, TextProps } from "./Text";
 
-const element = <Text testId="text">Lorem ipsum dolor sit amet.</Text>;
+const defaultText = <Text testId="text">Lorem ipsum dolor sit amet.</Text>;
 
 describe("Text", async () => {
   it("should render the text", () => {
-    expect(componentToJson(renderer.create(element))).toMatchSnapshot();
+    expect(componentToJson(renderer.create(defaultText))).toMatchSnapshot();
 
-    render(element);
+    render(defaultText);
 
     const text = screen.getByTestId("text");
 

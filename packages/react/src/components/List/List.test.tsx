@@ -15,8 +15,8 @@ const items = [
   <List.Item key="3">Consectetur adipiscing elit</List.Item>,
 ];
 
-const elementUnordered = <List testId="list">{items}</List>;
-const elementOrdered = (
+const unorderedList = <List testId="list">{items}</List>;
+const orderedList = (
   <List type="ordered" testId="list">
     {items}
   </List>
@@ -24,11 +24,9 @@ const elementOrdered = (
 
 describe("List", async () => {
   it("should render unordered list", () => {
-    expect(
-      componentToJson(renderer.create(elementUnordered)),
-    ).toMatchSnapshot();
+    expect(componentToJson(renderer.create(unorderedList))).toMatchSnapshot();
 
-    render(elementUnordered);
+    render(unorderedList);
 
     const list = screen.getByTestId("list");
     const listItems = list.querySelectorAll("li");
@@ -42,9 +40,9 @@ describe("List", async () => {
   });
 
   it("should render ordered list", () => {
-    expect(componentToJson(renderer.create(elementOrdered))).toMatchSnapshot();
+    expect(componentToJson(renderer.create(orderedList))).toMatchSnapshot();
 
-    render(elementOrdered);
+    render(orderedList);
 
     const list = screen.getByTestId("list");
 

@@ -9,15 +9,15 @@ import {
 } from "../../../test";
 import { Paragraph } from "./Paragraph";
 
-const element = (
+const defaultParagaph = (
   <Paragraph testId="paragraph">Lorem ipsum dolor sit amet.</Paragraph>
 );
 
 describe("Paragraph", async () => {
   it("should render the paragraph", () => {
-    expect(componentToJson(renderer.create(element))).toMatchSnapshot();
+    expect(componentToJson(renderer.create(defaultParagaph))).toMatchSnapshot();
 
-    render(element);
+    render(defaultParagaph);
 
     const paragraph = screen.getByTestId("paragraph");
 
