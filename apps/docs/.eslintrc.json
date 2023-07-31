@@ -1,6 +1,6 @@
 {
   "root": true,
-  "extends": ["@themeless-ui/eslint-config"],
+  "extends": ["@themeless-ui/eslint-config/storybook.json"],
   "env": {
     "browser": true,
     "es2022": true

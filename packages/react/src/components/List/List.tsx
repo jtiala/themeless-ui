@@ -1,5 +1,5 @@
 import { CommonComponentProps, cn } from "@themeless-ui/utils";
-import { ReactElement, createElement } from "react";
+import { ReactElement, ReactNode, createElement } from "react";
 import { ListItem, ListItemProps } from "./ListItem";
 
 type ListType = "ordered" | "unordered";
@@ -16,7 +16,7 @@ export type ListProps = {
   /**
    * One or more <List.Item> elements.
    */
-  children?: ListItemElement | ListItemElement[];
+  children?: ListItemElement | ListItemElement[] | ReactNode; // ReactNode is needed for MDXComponents
 } & CommonComponentProps;
 
 const className = cn("list");

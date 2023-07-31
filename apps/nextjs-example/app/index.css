@@ -1,0 +1,35 @@
+@import "../node_modules/@themeless-ui/style/dist/style.css";
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+.appContainer {
+  margin: 64px 16px;
+}
+
+.app {
+  display: flex;
+  max-width: 640px;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.app > header,
+.app > main,
+.app > footer {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+}
+
+.app > footer {
+  padding: 16px 0;
+  border-top: 1px solid gray;
+}
