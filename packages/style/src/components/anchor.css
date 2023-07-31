@@ -1,0 +1,22 @@
+.tui__anchor,
+.tui__anchor:link,
+.tui__anchor:visited {
+  display: inline;
+  box-sizing: border-box;
+  color: blue;
+  cursor: auto;
+  font-family: var(--tui__font-family-serif);
+  font-size: var(--tui__font-size-md);
+  -webkit-font-smoothing: var(--tui__font-smoothing-webkit);
+  -moz-osx-font-smoothing: var(--tui__font-smoothing-moz);
+  font-weight: var(--tui__font-weight-normal);
+  line-height: var(--tui__line-height-md);
+  text-decoration: underline;
+}
+
+a:link:hover,
+a:link:active,
+a:visited:active,
+a:visited:hover {
+  color: darkblue;
+}

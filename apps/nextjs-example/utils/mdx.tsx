@@ -1,4 +1,5 @@
 import {
+  Anchor,
   Blockquote,
   Heading,
   List,
@@ -9,7 +10,11 @@ import type { MDXComponents } from "mdx/types";
 
 export const mdxComponents: MDXComponents = {
   p: ({ children }) => <Paragraph>{children}</Paragraph>,
-  a: ({ children }) => <Text>{children}</Text>, // TODO: use <Anchor>
+  a: ({ href, target, children }) => (
+    <Anchor href={href} target={target}>
+      {children}
+    </Anchor>
+  ),
   em: ({ children }) => <Text type="em">{children}</Text>,
   strong: ({ children }) => <Text type="strong">{children}</Text>,
   blockquote: ({ children }) => <Blockquote>{children}</Blockquote>,

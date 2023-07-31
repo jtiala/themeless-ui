@@ -1,3 +1,4 @@
+export * from "./Anchor";
 export * from "./Blockquote";
 export * from "./Button";
 export * from "./Heading";

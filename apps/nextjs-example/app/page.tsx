@@ -1,4 +1,4 @@
-import { Heading, List, Text } from "@themeless-ui/react";
+import { Anchor, Heading, List, Text } from "@themeless-ui/react";
 import { allPosts } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 import Link from "next/link";
@@ -16,8 +16,9 @@ export default async function Home() {
         <List>
           {posts.map((post) => (
             <List.Item key={post._id}>
-              {/* TODO: use <Anchor> */}
-              <Link href={post.url}>{post.title}</Link>
+              <Link href={post.url} passHref legacyBehavior>
+                <Anchor>{post.title}</Anchor>
+              </Link>
             </List.Item>
           ))}
         </List>

@@ -1,4 +1,4 @@
-import { Heading, Text } from "@themeless-ui/react";
+import { Anchor, Heading, Text } from "@themeless-ui/react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./index.css";
@@ -22,31 +22,33 @@ export default function RootLayout({
               <Heading level={2}>ThemelessUI Next.js Example App</Heading>
               <nav>
                 <Text>
-                  {/* TODO: use <Anchor> */}
-                  <Link href="/">Home</Link>
+                  <Link href="/" passHref legacyBehavior>
+                    <Anchor>Home</Anchor>
+                  </Link>
                   {" | "}
-                  <Link href="/about">About</Link>
+                  <Link href="/about" passHref legacyBehavior>
+                    <Anchor>About</Anchor>
+                  </Link>
                 </Text>
               </nav>
             </header>
             <main>{children}</main>
             <footer>
               <Text type="small">
-                {/* TODO: use <Anchor> */}
                 <Link
                   href="https://github.com/jtiala/themeless-ui"
-                  target="_blank"
-                  rel="noreferrer"
+                  passHref
+                  legacyBehavior
                 >
-                  GitHub
+                  <Anchor target="_blank">GitHub</Anchor>
                 </Link>
                 {" | "}
                 <Link
                   href="https://jtiala.github.io/themeless-ui"
-                  target="_blank"
-                  rel="noreferrer"
+                  passHref
+                  legacyBehavior
                 >
-                  Storybook
+                  <Anchor target="_blank">Storybook</Anchor>
                 </Link>
               </Text>
             </footer>

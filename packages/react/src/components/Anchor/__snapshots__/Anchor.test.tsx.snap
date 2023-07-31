@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Anchor > should render default anchor 1`] = `
+<a
+  className="tui__anchor"
+  data-testid="anchor"
+  href="https://example.com"
+>
+  Example.com
+</a>
+`;
+
+exports[`Anchor > should render external anchor 1`] = `
+<a
+  className="tui__anchor"
+  data-testid="anchor"
+  href="https://example.com"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  Example.com
+</a>
+`;
