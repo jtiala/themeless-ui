@@ -4,9 +4,10 @@
   margin: var(--tui__spacing-16) 0;
   color: var(--tui__color-black);
   font-family: var(--tui__font-family-serif);
-  font-size: var(--tui__font-size-medium);
+  font-size: var(--tui__font-size-md);
   -webkit-font-smoothing: var(--tui__font-smoothing-webkit);
   -moz-osx-font-smoothing: var(--tui__font-smoothing-moz);
+  font-weight: var(--tui__font-weight-normal);
   line-height: var(--tui__line-height-md);
   overflow-wrap: break-word;
 }

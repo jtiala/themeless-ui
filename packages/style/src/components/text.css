@@ -1,8 +1,10 @@
 .tui__text {
   display: inline;
   box-sizing: border-box;
+  font-size: var(--tui__font-size-md);
   -webkit-font-smoothing: var(--tui__font-smoothing-webkit);
   -moz-osx-font-smoothing: var(--tui__font-smoothing-moz);
+  line-height: var(--tui__line-height-md);
 }
 
 abbr[title].tui__text {
@@ -68,6 +70,11 @@ samp.tui__text {
 
 small.tui__text {
   font-size: var(--tui__font-size-sm);
+}
+
+span.tui__text {
+  font-family: var(--tui__font-family-serif);
+  font-weight: var(--tui__font-weight-normal);
 }
 
 strong.tui__text {
