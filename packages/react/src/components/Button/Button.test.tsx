@@ -15,8 +15,20 @@ const onClick = vi.fn();
 const onFocus = vi.fn();
 const onBlur = vi.fn();
 
-const element = (
+const defaultButton = (
   <Button
+    onClick={() => onClick()}
+    onFocus={() => onFocus()}
+    onBlur={() => onBlur()}
+    testId="button"
+  >
+    Button
+  </Button>
+);
+
+const disabledButton = (
+  <Button
+    disabled
     onClick={() => onClick()}
     onFocus={() => onFocus()}
     onBlur={() => onBlur()}
@@ -28,9 +40,9 @@ const element = (
 
 describe("Button", async () => {
   it("should render the button", () => {
-    expect(componentToJson(renderer.create(element))).toMatchSnapshot();
+    expect(componentToJson(renderer.create(defaultButton))).toMatchSnapshot();
 
-    render(element);
+    render(defaultButton);
 
     expect(screen.getByTestId("button")).toBeInTheDocument();
   });
@@ -40,7 +52,7 @@ describe("Button", async () => {
     onFocus.mockReset();
     onBlur.mockReset();
 
-    render(element);
+    render(defaultButton);
     const button = screen.getByTestId("button");
 
     expect(button).toBeInTheDocument();
@@ -60,5 +72,32 @@ describe("Button", async () => {
 
     await userEvent.type(button, "{space}");
     expect(onClick.mock.calls.length).toBe(2);
+  });
+
+  it("shouldn't be possible to access a disabled button", async () => {
+    onClick.mockReset();
+    onFocus.mockReset();
+    onBlur.mockReset();
+
+    render(disabledButton);
+    const button = screen.getByTestId("button");
+
+    expect(button).toBeInTheDocument();
+    expect(onClick.mock.calls.length).toBe(0);
+    expect(onFocus.mock.calls.length).toBe(0);
+    expect(onBlur.mock.calls.length).toBe(0);
+
+    await userEvent.click(button);
+    expect(onClick.mock.calls.length).toBe(0);
+    expect(onFocus.mock.calls.length).toBe(0);
+
+    button.blur();
+    expect(onBlur.mock.calls.length).toBe(0);
+
+    button.focus();
+    expect(onFocus.mock.calls.length).toBe(0);
+
+    await userEvent.type(button, "{space}");
+    expect(onClick.mock.calls.length).toBe(0);
   });
 });

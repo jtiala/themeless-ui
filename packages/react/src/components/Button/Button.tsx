@@ -10,6 +10,16 @@ export type ButtonProps = {
   type?: HTMLButtonProps["type"];
 
   /**
+   * Name of the button.
+   */
+  name?: HTMLButtonProps["name"];
+
+  /**
+   * Prevents the user from interacting with the button: it cannot be pressed or focused.
+   */
+  disabled?: HTMLButtonProps["disabled"];
+
+  /**
    * Callback to call when the button is clicked.
    */
   onClick?: HTMLButtonProps["onClick"];
@@ -37,6 +47,8 @@ const className = cn("button");
  */
 export function Button({
   type = "button",
+  name,
+  disabled,
   onClick,
   onFocus,
   onBlur,
@@ -47,6 +59,8 @@ export function Button({
   return (
     <button
       type={type}
+      name={name}
+      disabled={disabled}
       onClick={onClick}
       onFocus={onFocus}
       onBlur={onBlur}
