@@ -5,11 +5,6 @@ type HTMLButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 export type ButtonProps = {
   /**
-   * Button content.
-   */
-  children: ReactNode;
-
-  /**
    * Type of the button.
    */
   type?: HTMLButtonProps["type"];
@@ -28,6 +23,11 @@ export type ButtonProps = {
    * Callback to call when the button loses focus.
    */
   onBlur?: HTMLButtonProps["onBlur"];
+
+  /**
+   * Button content.
+   */
+  children: ReactNode;
 } & CommonComponentProps;
 
 const className = cn("button");
@@ -35,8 +35,26 @@ const className = cn("button");
 /**
  * A clickable UI element commonly used to trigger actions, such as submitting a form.
  */
-export function Button({ type = "button", testId, ...rest }: ButtonProps) {
+export function Button({
+  type = "button",
+  onClick,
+  onFocus,
+  onBlur,
+  children,
+  id,
+  testId,
+}: ButtonProps) {
   return (
-    <button type={type} {...rest} className={className} data-testid={testId} />
+    <button
+      type={type}
+      onClick={onClick}
+      onFocus={onFocus}
+      onBlur={onBlur}
+      className={className}
+      id={id}
+      data-testid={testId}
+    >
+      {children}
+    </button>
   );
 }

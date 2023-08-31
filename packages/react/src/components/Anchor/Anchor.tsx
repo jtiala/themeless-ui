@@ -87,6 +87,7 @@ export function Anchor({
   onTouchStart,
   onTouchEnd,
   children,
+  id,
   testId,
 }: AnchorProps) {
   const openInNewTab = target === "_blank";
@@ -107,6 +108,7 @@ export function Anchor({
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
       className={className}
+      id={id}
       data-testid={testId}
     >
       {children}

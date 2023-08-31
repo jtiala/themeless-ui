@@ -125,10 +125,18 @@ const className = cn("text");
 /**
  * Display inline text content with different styles.
  */
-export function Text({ type, children, testId, ...rest }: TextProps) {
+export function Text({
+  type,
+  title,
+  cite,
+  dateTime,
+  children,
+  id,
+  testId,
+}: TextProps) {
   return createElement(
     type || "span",
-    { className, ...rest, "data-testid": testId },
+    { className, title, cite, id, dateTime, "data-testid": testId },
     children,
   );
 }

@@ -24,10 +24,14 @@ const className = cn("list");
 /**
  * Display a list of items.
  */
-export function List({ type, children, testId }: ListProps) {
+export function List({ type, children, id, testId }: ListProps) {
   const element = type === "ordered" ? "ol" : "ul";
 
-  return createElement(element, { className, "data-testid": testId }, children);
+  return createElement(
+    element,
+    { className, id, "data-testid": testId },
+    children,
+  );
 }
 
 List.Item = ListItem;
