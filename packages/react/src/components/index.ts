@@ -7,3 +7,4 @@ export * from "./List";
 export * from "./Paragraph";
 export * from "./Stack";
 export * from "./Text";
+export * from "./Textarea";

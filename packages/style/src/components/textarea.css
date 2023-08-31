@@ -1,0 +1,38 @@
+.tui__textarea {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: var(--tui__spacing-4) var(--tui__spacing-8);
+  border: solid var(--tui__color-black) var(--tui__spacing-1);
+  border-radius: 0;
+  margin: 0;
+  background-color: var(--tui__color-white);
+  color: var(--tui__color-black);
+  font-family: var(--tui__font-family-serif);
+  font-size: var(--tui__font-size-md);
+  -webkit-font-smoothing: var(--tui__font-smoothing-webkit);
+  -moz-osx-font-smoothing: var(--tui__font-smoothing-moz);
+  font-style: normal;
+  font-weight: var(--tui__font-weight-normal);
+  line-height: var(--tui__line-height-md);
+  overflow-wrap: break-word;
+}
+
+.tui__textarea:hover {
+  border-color: var(--tui__color-gray-800);
+}
+
+.tui__textarea:focus {
+  border-color: var(--tui__color-gray-800);
+  outline: solid var(--tui__color-gray-200) var(--tui__spacing-3);
+  outline-offset: var(--tui__spacing-1);
+}
+
+.tui__textarea:disabled,
+.tui__textarea:read-only,
+.tui__textarea:disabled:hover,
+.tui__textarea:read-only:hover,
+.tui__textarea:disabled:focus,
+.tui__textarea:read-only:focus {
+  border-color: var(--tui__color-gray-200);
+  background-color: var(--tui__color-gray-200);
+}
