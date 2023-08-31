@@ -2,6 +2,7 @@ export * from "./Anchor";
 export * from "./Blockquote";
 export * from "./Button";
 export * from "./Heading";
+export * from "./Input";
 export * from "./List";
 export * from "./Paragraph";
 export * from "./Stack";
