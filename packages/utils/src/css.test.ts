@@ -1,4 +1,5 @@
-import { cn, CSS_PREFIX } from "./css";
+import { describe, expect, it } from "vitest";
+import { CSS_PREFIX, cn } from "./css";
 
 describe("cn", async () => {
   it("should generate scoped class name", () => {
