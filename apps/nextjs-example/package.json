@@ -56,14 +56,14 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@playwright/test": "1.37.1",
+    "@playwright/test": "1.38.0",
     "@themeless-ui/eslint-config": "workspace:*",
     "@themeless-ui/stylelint-config": "workspace:*",
     "@themeless-ui/typescript-config": "workspace:*",
     "@types/mdx": "2.0.7",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
-    "eslint": "8.48.0",
+    "eslint": "8.49.0",
     "stylelint": "15.10.3",
     "typescript": "5.2.2"
   }
