@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/react-example-v0.4.0...@themeless-ui/react-example-v0.5.0) (2023-09-15)
+
+
+### Bug Fixes
+
+* jest-dom usage with vitest ([686914a](https://github.com/jtiala/themeless-ui/commit/686914a0646fd54896498a54255623df8a6db08b))
+
 ## [0.4.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/react-example-v0.3.0...@themeless-ui/react-example-v0.4.0) (2023-07-31)
 
 
