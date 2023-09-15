@@ -23,6 +23,7 @@ const horizontalClassName = cn("stack-horizontal");
 export function Stack({
   direction = "vertical",
   children,
+  id,
   testId,
 }: StackProps) {
   const classNames = [
@@ -31,7 +32,7 @@ export function Stack({
   ].join(" ");
 
   return (
-    <div className={classNames} data-testid={testId}>
+    <div className={classNames} id={id} data-testid={testId}>
       {children}
     </div>
   );

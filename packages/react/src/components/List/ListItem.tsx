@@ -11,6 +11,10 @@ export type ListItemProps = {
 /**
  * Display a list item.
  */
-export function ListItem({ children, testId }: ListItemProps) {
-  return <li data-testid={testId}>{children}</li>;
+export function ListItem({ children, id, testId }: ListItemProps) {
+  return (
+    <li id={id} data-testid={testId}>
+      {children}
+    </li>
+  );
 }

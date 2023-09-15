@@ -1,12 +1,10 @@
-.tui__button {
+.tui__input {
   display: inline-block;
-  overflow: visible;
   box-sizing: border-box;
   padding: var(--tui__spacing-4) var(--tui__spacing-8);
   border: solid var(--tui__color-black) var(--tui__spacing-1);
   border-radius: 0;
   margin: 0;
-  appearance: button;
   background-color: var(--tui__color-white);
   color: var(--tui__color-black);
   font-family: var(--tui__font-family-serif);
@@ -17,28 +15,24 @@
   font-weight: var(--tui__font-weight-normal);
   line-height: var(--tui__line-height-md);
   overflow-wrap: break-word;
-  text-transform: none;
 }
 
-.tui__button:hover {
+.tui__input:hover {
   border-color: var(--tui__color-gray-800);
-  background-color: var(--tui__color-gray-100);
 }
 
-.tui__button:focus {
+.tui__input:focus {
   border-color: var(--tui__color-gray-800);
-  background-color: var(--tui__color-gray-100);
   outline: solid var(--tui__color-gray-200) var(--tui__spacing-3);
   outline-offset: var(--tui__spacing-1);
 }
 
-.tui__button:active {
-  background-color: var(--tui__color-gray-200);
-}
-
-.tui__button:disabled,
-.tui__button:disabled:hover,
-.tui__button:disabled:focus {
+.tui__input:disabled,
+.tui__input:read-only,
+.tui__input:disabled:hover,
+.tui__input:read-only:hover,
+.tui__input:disabled:focus,
+.tui__input:read-only:focus {
   border-color: var(--tui__color-gray-200);
   background-color: var(--tui__color-gray-200);
 }

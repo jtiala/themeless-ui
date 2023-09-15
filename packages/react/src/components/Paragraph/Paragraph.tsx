@@ -13,9 +13,9 @@ const className = cn("paragraph");
 /**
  * Display a text paragraph.
  */
-export function Paragraph({ children, testId }: ParagraphProps) {
+export function Paragraph({ children, id, testId }: ParagraphProps) {
   return (
-    <p className={className} data-testid={testId}>
+    <p className={className} id={id} data-testid={testId}>
       {children}
     </p>
   );

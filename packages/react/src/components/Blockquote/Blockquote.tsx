@@ -36,12 +36,14 @@ export function Blockquote({
   author,
   source,
   children,
+  id,
   testId,
 }: BlockquoteProps) {
   return (
     <blockquote
       cite={cite}
       className={blockquoteClassName}
+      id={id}
       data-testid={testId}
     >
       <div className={quoteClassName}>{children}</div>
