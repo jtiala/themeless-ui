@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/theme-default-v0.4.0...@themeless-ui/theme-default-v0.5.0) (2023-09-15)
+
+
+### Miscellaneous Chores
+
+* **@themeless-ui/theme-default:** Synchronize [@themeless-ui](https://github.com/themeless-ui) versions
+
 ## [0.4.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/theme-default-v0.3.0...@themeless-ui/theme-default-v0.4.0) (2023-07-31)
 
 

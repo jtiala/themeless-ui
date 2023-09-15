@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/typescript-config-v0.4.0...@themeless-ui/typescript-config-v0.5.0) (2023-09-15)
+
+
+### Miscellaneous Chores
+
+* **@themeless-ui/typescript-config:** Synchronize [@themeless-ui](https://github.com/themeless-ui) versions
+
 ## [0.4.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/typescript-config-v0.3.0...@themeless-ui/typescript-config-v0.4.0) (2023-07-31)
 
 
