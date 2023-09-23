@@ -28,7 +28,7 @@
     "dist",
     "CHANGELOG.md"
   ],
-  "packageManager": "pnpm@8.7.1",
+  "packageManager": "pnpm@8.7.6",
   "scripts": {
     "build": "vite build",
     "lint": "pnpm run lint:tsc && pnpm run lint:eslint && pnpm run lint:stylelint",
@@ -52,7 +52,7 @@
     "@themeless-ui/eslint-config": "workspace:*",
     "@themeless-ui/stylelint-config": "workspace:*",
     "@themeless-ui/typescript-config": "workspace:*",
-    "eslint": "8.49.0",
+    "eslint": "8.50.0",
     "stylelint": "15.10.3",
     "typescript": "5.2.2",
     "vite": "4.4.9"
