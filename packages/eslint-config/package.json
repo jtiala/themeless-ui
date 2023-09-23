@@ -1,6 +1,6 @@
 {
   "name": "@themeless-ui/eslint-config",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "ESLint configuration for ThemelessUI",
   "keywords": [
     "eslint",
