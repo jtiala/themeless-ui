@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/docs-v0.5.0...@themeless-ui/docs-v0.6.0) (2023-09-23)
+
+
+### Miscellaneous Chores
+
+* release 0.6.0 ([c685908](https://github.com/jtiala/themeless-ui/commit/c6859081ea81ca09ab7b099dd3b18469b52e0f13))
+
 ## [0.5.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/docs-v0.4.0...@themeless-ui/docs-v0.5.0) (2023-09-15)
 
 
