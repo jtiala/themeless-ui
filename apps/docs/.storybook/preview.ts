@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/react";
-import "../node_modules/@themeless-ui/style/dist/style.css";
+import "../node_modules/@themeless-ui/style/dist/index.css";
 
 const preview: Preview = {
   parameters: {
