@@ -23,5 +23,8 @@
   "packageManager": "pnpm@8.7.6",
   "scripts": {
     "publish:npm": "pnpm publish --access public"
+  },
+  "devDependencies": {
+    "ts-lit-plugin": "1.2.1"
   }
 }
