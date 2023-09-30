@@ -21,14 +21,11 @@
   "packageManager": "pnpm@8.7.6",
   "scripts": {
     "build": "vite build",
-    "lint": "pnpm run lint:tsc && pnpm run lint:eslint && pnpm run lint:stylelint",
-    "lint:report": "pnpm run lint:tsc:report && pnpm run lint:eslint:report && pnpm run lint:stylelint:report",
-    "lint:fix": "pnpm run lint:eslint:fix && pnpm run lint:stylelint:fix",
+    "lint": "pnpm run lint:tsc && pnpm run lint:stylelint",
+    "lint:report": "pnpm run lint:tsc:report && pnpm run lint:stylelint:report",
+    "lint:fix": "pnpm run lint:stylelint:fix",
     "lint:tsc": "tsc",
     "lint:tsc:report": "mkdir -p ./reports && tsc > ./reports/lint-report-tsc.txt",
-    "lint:eslint": "eslint \"**/*.{ts,tsx}\"",
-    "lint:eslint:report": "eslint -f json -o ./reports/lint-report-eslint.json \"**/*.{ts,tsx}\"",
-    "lint:eslint:fix": "eslint --fix \"**/*.{ts,tsx}\"",
     "lint:stylelint": "stylelint \"**/*.css\"",
     "lint:stylelint:report": "stylelint -f json -o ./reports/lint-report-stylelint.json \"**/*.css\"",
     "lint:stylelint:fix": "stylelint \"**/*.css\" --fix",
@@ -36,10 +33,8 @@
     "publish:npm": "pnpm publish --access public"
   },
   "devDependencies": {
-    "@themeless-ui/eslint-config": "workspace:*",
     "@themeless-ui/stylelint-config": "workspace:*",
     "@themeless-ui/typescript-config": "workspace:*",
-    "eslint": "8.50.0",
     "stylelint": "15.10.3",
     "typescript": "5.2.2",
     "vite": "4.4.9"
