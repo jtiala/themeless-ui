@@ -4,19 +4,11 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
-    lib: {
-      entry: "src/index.ts",
-      name: "theme-default",
-      fileName: "index",
-    },
     rollupOptions: {
+      input: "src/index.css",
       output: {
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name === "style.css") {
-            return "theme-default.css";
-          }
-
-          return assetInfo.name || "";
+        assetFileNames: () => {
+          return "theme-default.css";
         },
       },
     },
