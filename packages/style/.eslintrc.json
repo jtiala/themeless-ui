@@ -1,8 +1,0 @@
-{
-  "root": true,
-  "extends": ["@themeless-ui/eslint-config/react.json"],
-  "env": {
-    "browser": true,
-    "es2022": true
-  }
-}

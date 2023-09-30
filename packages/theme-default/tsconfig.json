@@ -1,4 +1,3 @@
 {
-  "extends": "@themeless-ui/typescript-config/vite-react.json",
-  "include": ["src"]
+  "extends": "@themeless-ui/typescript-config/vite-react.json"
 }
