@@ -25,6 +25,6 @@
     "publish:npm": "pnpm publish --access public"
   },
   "devDependencies": {
-    "ts-lit-plugin": "1.2.1"
+    "ts-lit-plugin": "2.0.1"
   }
 }
