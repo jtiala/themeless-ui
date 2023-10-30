@@ -29,7 +29,7 @@
     "dist",
     "CHANGELOG.md"
   ],
-  "packageManager": "pnpm@8.7.6",
+  "packageManager": "pnpm@8.10.0",
   "scripts": {
     "build": "vite build",
     "test": "pnpm run test:vitest",
