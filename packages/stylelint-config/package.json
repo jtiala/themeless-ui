@@ -20,12 +20,12 @@
     "index.json",
     "CHANGELOG.md"
   ],
-  "packageManager": "pnpm@8.7.6",
+  "packageManager": "pnpm@8.10.0",
   "scripts": {
     "publish:npm": "pnpm publish --access public"
   },
   "devDependencies": {
-    "stylelint": "15.10.3",
+    "stylelint": "15.11.0",
     "stylelint-config-idiomatic-order": "9.0.0",
     "stylelint-config-standard": "34.0.0"
   }

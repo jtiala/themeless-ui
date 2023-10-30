@@ -17,7 +17,7 @@
   "files": [
     "CHANGELOG.md"
   ],
-  "packageManager": "pnpm@8.7.6",
+  "packageManager": "pnpm@8.10.0",
   "scripts": {
     "dev": "turbo run dev --no-cache --continue --concurrency=12",
     "build": "turbo run build",
@@ -35,15 +35,15 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.7.1",
-    "@commitlint/config-conventional": "17.7.0",
-    "@playwright/test": "1.38.1",
+    "@commitlint/cli": "18.2.0",
+    "@commitlint/config-conventional": "18.1.0",
+    "@playwright/test": "1.39.0",
     "@themeless-ui/eslint-config": "workspace:*",
-    "eslint": "8.50.0",
+    "eslint": "8.52.0",
     "husky": "8.0.3",
-    "lint-staged": "14.0.1",
-    "npm-check-updates": "16.14.4",
+    "lint-staged": "15.0.2",
+    "npm-check-updates": "16.14.6",
     "prettier": "3.0.3",
-    "turbo": "1.10.14"
+    "turbo": "1.10.16"
   }
 }

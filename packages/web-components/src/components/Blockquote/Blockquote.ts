@@ -1,5 +1,6 @@
+import style from "@themeless-ui/style/dist/blockquote.css?inline";
 import { cn } from "@themeless-ui/utils";
-import { html } from "lit";
+import { html, unsafeCSS } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import { TUIComponent } from "../../utils";
 
@@ -27,6 +28,8 @@ export class Blockquote extends TUIComponent {
    */
   @property()
   source?: string;
+
+  static styles = unsafeCSS(style);
 
   override render() {
     const authorElement = this.author

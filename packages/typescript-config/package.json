@@ -20,11 +20,11 @@
     "*.json",
     "CHANGELOG.md"
   ],
-  "packageManager": "pnpm@8.7.6",
+  "packageManager": "pnpm@8.10.0",
   "scripts": {
     "publish:npm": "pnpm publish --access public"
   },
   "devDependencies": {
-    "ts-lit-plugin": "1.2.1"
+    "ts-lit-plugin": "2.0.1"
   }
 }
