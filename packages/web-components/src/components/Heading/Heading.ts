@@ -1,6 +1,8 @@
 /* eslint-disable lit/no-invalid-html */
 /* eslint-disable lit/binding-positions */
+import style from "@themeless-ui/style/dist/heading.css?inline";
 import { cn } from "@themeless-ui/utils";
+import { unsafeCSS } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import { html, unsafeStatic } from "lit/static-html.js";
 import { TUIComponent } from "../../utils";
@@ -16,6 +18,8 @@ export class Heading extends TUIComponent {
    */
   @property({ type: Number })
   level!: HeadingLevel;
+
+  static styles = unsafeCSS(style);
 
   override render() {
     const tag = unsafeStatic(`h${this.level}`);

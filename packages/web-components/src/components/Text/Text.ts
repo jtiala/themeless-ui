@@ -1,6 +1,8 @@
 /* eslint-disable lit/no-invalid-html */
 /* eslint-disable lit/binding-positions */
+import style from "@themeless-ui/style/dist/text.css?inline";
 import { cn } from "@themeless-ui/utils";
+import { unsafeCSS } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import { html, unsafeStatic } from "lit/static-html.js";
 import { TUIComponent } from "../../utils";
@@ -65,6 +67,8 @@ export class Text extends TUIComponent {
    */
   @property()
   dateTime?: string;
+
+  static styles = unsafeCSS(style);
 
   override render() {
     const tag = unsafeStatic(this.type || "span");
