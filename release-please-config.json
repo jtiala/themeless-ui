@@ -10,12 +10,16 @@
       "component": "@themeless-ui/docs",
       "bump-minor-pre-major": true
     },
+    "apps/nextjs-example": {
+      "component": "@themeless-ui/nextjs-example",
+      "bump-minor-pre-major": true
+    },
     "apps/react-example": {
       "component": "@themeless-ui/react-example",
       "bump-minor-pre-major": true
     },
-    "apps/nextjs-example": {
-      "component": "@themeless-ui/nextjs-example",
+    "apps/web-components-example": {
+      "component": "@themeless-ui/web-components-example",
       "bump-minor-pre-major": true
     },
     "packages/eslint-config": {
@@ -45,6 +49,10 @@
     "packages/utils": {
       "component": "@themeless-ui/utils",
       "bump-minor-pre-major": true
+    },
+    "packages/web-components": {
+      "component": "@themeless-ui/web-components",
+      "bump-minor-pre-major": true
     }
   },
   "plugins": [
@@ -54,14 +62,17 @@
       "components": [
         "themeless-ui",
         "@themeless-ui/docs",
+        "@themeless-ui/nextjs-example",
         "@themeless-ui/react-example",
+        "@themeless-ui/web-components-example",
         "@themeless-ui/eslint-config",
         "@themeless-ui/react",
         "@themeless-ui/style",
         "@themeless-ui/stylelint-config",
         "@themeless-ui/theme-default",
         "@themeless-ui/typescript-config",
-        "@themeless-ui/utils"
+        "@themeless-ui/utils",
+        "@themeless-ui/web-components"
       ]
     }
   ]
