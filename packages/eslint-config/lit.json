@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "./base.json",
+    "plugin:wc/recommended",
+    "plugin:lit/recommended",
+    "./overwrites.json"
+  ]
+}
