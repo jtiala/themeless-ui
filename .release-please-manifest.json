@@ -1,13 +1,15 @@
 {
   ".": "0.6.0",
   "apps/docs": "0.6.0",
-  "apps/react-example": "0.6.0",
   "apps/nextjs-example": "0.6.0",
+  "apps/react-example": "0.6.0",
+  "apps/web-components-example": "0.0.0",
   "packages/eslint-config": "0.6.0",
   "packages/react": "0.6.0",
   "packages/style": "0.6.0",
   "packages/stylelint-config": "0.6.0",
   "packages/theme-default": "0.6.0",
   "packages/typescript-config": "0.6.0",
-  "packages/utils": "0.6.0"
+  "packages/utils": "0.6.0",
+  "packages/web-components": "0.0.0"
 }

@@ -1,0 +1,31 @@
+{
+  "name": "@themeless-ui/web-components-example",
+  "version": "0.0.0",
+  "description": "ThemelessUI example Web Components app",
+  "keywords": [
+    "web-components"
+  ],
+  "author": "Joonas Tiala <joonas.tiala@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jtiala/themeless-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtiala/themeless-ui",
+    "directory": "apps/web-components-example"
+  },
+  "type": "module",
+  "files": [
+    "index.html",
+    "CHANGELOG.md"
+  ],
+  "packageManager": "pnpm@8.7.6",
+  "scripts": {
+    "clean": "rm -rf node_modules .turbo",
+    "publish:npm": "pnpm publish --access public"
+  },
+  "dependencies": {
+    "@themeless-ui/web-components": "workspace:*",
+    "@themeless-ui/style": "workspace:*",
+    "@themeless-ui/theme-default": "workspace:*"
+  }
+}
