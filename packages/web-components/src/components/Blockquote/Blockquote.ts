@@ -1,8 +1,8 @@
 import style from "@themeless-ui/style/dist/blockquote.css?inline";
 import { cn } from "@themeless-ui/utils";
-import { html, unsafeCSS } from "lit";
+import { html, nothing, unsafeCSS } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { TUIComponent } from "../../utils";
+import { TUIComponent } from "../TUIComponent";
 
 const blockquoteClassName = cn("blockquote");
 const quoteClassName = cn("blockquote-quote");
@@ -52,10 +52,10 @@ export class Blockquote extends TUIComponent {
 
     return html`
       <blockquote
-        cite="${this.cite}"
+        cite="${this.cite || nothing}"
         class="${blockquoteClassName}"
-        id="${this.id}"
-        data-testid="${this.testId}"
+        id="${this.id || nothing}"
+        data-testid="${this.testId || nothing}"
       >
         <div className="${quoteClassName}"><slot></slot></div>
         ${footer}

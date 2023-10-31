@@ -1,28 +1,30 @@
 /* eslint-disable lit/no-invalid-html */
 /* eslint-disable lit/binding-positions */
-import style from "@themeless-ui/style/dist/heading.css?inline";
+import style from "@themeless-ui/style/dist/list.css?inline";
 import { cn } from "@themeless-ui/utils";
 import { nothing, unsafeCSS } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import { html, unsafeStatic } from "lit/static-html.js";
 import { TUIComponent } from "../TUIComponent";
 
-type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
+type ListType = "ordered" | "unordered";
 
-const className = cn("heading");
+const className = cn("list");
 
-@customElement("tui-heading")
-export class Heading extends TUIComponent {
+@customElement("tui-list")
+export class List extends TUIComponent {
   /**
-   * The level of the heading.
+   * Type of the list.
+   *
+   * @default unordered
    */
-  @property({ type: Number })
-  level!: HeadingLevel;
+  @property()
+  type?: ListType;
 
   static styles = unsafeCSS(style);
 
   override render() {
-    const tag = unsafeStatic(`h${this.level}`);
+    const tag = unsafeStatic(this.type === "ordered" ? "ol" : "ul");
 
     return html`
       <${tag}
@@ -38,6 +40,6 @@ export class Heading extends TUIComponent {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "tui-heading": Heading;
+    "tui-list": List;
   }
 }

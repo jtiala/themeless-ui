@@ -2,10 +2,10 @@
 /* eslint-disable lit/binding-positions */
 import style from "@themeless-ui/style/dist/text.css?inline";
 import { cn } from "@themeless-ui/utils";
-import { unsafeCSS } from "lit";
+import { nothing, unsafeCSS } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import { html, unsafeStatic } from "lit/static-html.js";
-import { TUIComponent } from "../../utils";
+import { TUIComponent } from "../TUIComponent";
 
 type TextType =
   | "abbr"
@@ -39,7 +39,7 @@ export class Text extends TUIComponent {
    * @default span
    */
   @property()
-  type?: TextType;
+  type!: TextType;
 
   /**
    * Only available when `type` is `abbr`.
@@ -47,9 +47,8 @@ export class Text extends TUIComponent {
    * It's recommended to provide a full expansion of the abbreviated term in plain text on the first use of the abbreviation.
    * If it's not viable to provide the expansion as full text, `title` should be used instead.
    */
-  // TODO: this shouldn't have !
   @property()
-  title!: string;
+  abbrTitle?: string;
 
   /**
    * Only available when `type` is `q`, `del`, or `ins`.
@@ -70,17 +69,23 @@ export class Text extends TUIComponent {
 
   static styles = unsafeCSS(style);
 
+  constructor() {
+    super();
+
+    this.type = "span";
+  }
+
   override render() {
-    const tag = unsafeStatic(this.type || "span");
+    const tag = unsafeStatic(this.type);
 
     return html`
       <${tag}
-        title="${this.title}"
-        cite="${this.cite}"
-        dateTime="${this.dateTime}"
+        title="${this.abbrTitle || nothing}"
+        cite="${this.cite || nothing}"
+        dateTime="${this.dateTime || nothing}"
         class="${className}"
-        id="${this.id}"
-        data-testid="${this.testId}"
+        id="${this.id || nothing}"
+        data-testid="${this.testId || nothing}"
       >
         <slot></slot>
       </${tag}>

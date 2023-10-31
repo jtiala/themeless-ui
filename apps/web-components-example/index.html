@@ -15,11 +15,189 @@
   </head>
   <body>
     <script src="node_modules/@themeless-ui/web-components/dist/index.umd.cjs"></script>
-    <tui-heading level="1">Heading 1</tui-heading>
-    <tui-text>text</tui-text>
-    <tui-text type="mark">text</tui-text>
-    <tui-heading level="2">Heading 2</tui-heading>
-    <tui-paragraph>Paragraph</tui-paragraph>
-    <tui-blockquote author="author" source="source">blockquote</tui-blockquote>
+
+    <tui-heading level="1">ThemelessUI Web Components Examples</tui-heading>
+    <tui-stack>
+      <tui-stack>
+        <tui-heading level="2">Anchor</tui-heading>
+        <tui-anchor href="#">Default</tui-anchor>
+        <tui-anchor href="#" target="_blank">Open in a new tab</tui-anchor>
+      </tui-stack>
+
+      <tui-stack>
+        <tui-heading level="2">Blockquote</tui-heading>
+        <tui-blockquote author="author" source="source">Default</tui-blockquote>
+        <tui-blockquote source="source">Without author</tui-blockquote>
+        <tui-blockquote author="author">Without source</tui-blockquote>
+      </tui-stack>
+
+      <tui-stack>
+        <tui-heading level="2">Button</tui-heading>
+        <tui-button id="button-1">Button</tui-button>
+        <tui-button id="button-2" disabled>Disabled button</tui-button>
+        <tui-button id="button-3" type="submit">Submit button</tui-button>
+      </tui-stack>
+
+      <tui-stack>
+        <tui-heading level="2">Heading</tui-heading>
+        <tui-heading level="1">Heading level 1</tui-heading>
+        <tui-heading level="2">Heading level 2</tui-heading>
+        <tui-heading level="3">Heading level 3</tui-heading>
+        <tui-heading level="4">Heading level 4</tui-heading>
+        <tui-heading level="5">Heading level 5</tui-heading>
+        <tui-heading level="6">Heading level 6</tui-heading>
+      </tui-stack>
+
+      <tui-stack>
+        <tui-heading level="2">Input</tui-heading>
+        <tui-input placeholder="text input"></tui-input>
+        <tui-input type="number" placeholder="number input"></tui-input>
+        <tui-input placeholder="disabled input" disabled></tui-input>
+        <tui-input placeholder="read only input" readOnly></tui-input>
+      </tui-stack>
+
+      <tui-stack>
+        <tui-heading level="2">List</tui-heading>
+        <tui-list>
+          <tui-list-item>List item A</tui-list-item>
+          <tui-list-item>List item B</tui-list-item>
+          <tui-list-item>List item C</tui-list-item>
+        </tui-list>
+        <tui-list type="ordered">
+          <tui-list-item>List item A</tui-list-item>
+          <tui-list-item>List item B</tui-list-item>
+          <tui-list-item>List item C</tui-list-item>
+        </tui-list>
+      </tui-stack>
+
+      <tui-stack>
+        <tui-heading level="2">Paragraph</tui-heading>
+        <tui-paragraph>Paragraph</tui-paragraph>
+      </tui-stack>
+
+      <tui-stack>
+        <tui-heading level="2">Stack</tui-heading>
+        <tui-stack>
+          <span>Vertical</span>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </tui-stack>
+        <tui-stack direction="horizontal">
+          <span>Horizontal</span>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </tui-stack>
+      </tui-stack>
+
+      <tui-stack>
+        <tui-heading level="2">Text</tui-heading>
+        <tui-text type="abbr">Abbreviation</tui-text>
+        <tui-text type="abbr" title="Abbreviation"
+          >Abbreviation with title</tui-text
+        >
+        <tui-text type="b">Bring attention to</tui-text>
+        <tui-text type="cite">Citation</tui-text>
+        <tui-text type="code">Inline code</tui-text>
+        <tui-text type="del">Deleted text</tui-text>
+        <tui-text
+          type="del"
+          cite="https://change-explanation.example.com"
+          dateTime="2000-01-01H00:00:00"
+          >Deleted text with cite</tui-text
+        >
+        <tui-text type="em">Emphasis</tui-text>
+        <tui-text type="i">Idiomatic text</tui-text>
+        <tui-text type="ins">Inserted text</tui-text>
+        <tui-text
+          type="ins"
+          cite="https://change-explanation.example.com"
+          dateTime="2000-01-01H00:00:00"
+          >Inserted text with cite</tui-text
+        >
+        <tui-text type="kbd">Keyboard input</tui-text>
+        <tui-text type="mark">Mark text</tui-text>
+        <tui-text type="q">Inline quotation</tui-text>
+        <tui-text type="q" cite="https://source-of-the-quote.example.com"
+          >Inline quotation with cite</tui-text
+        >
+        <tui-text type="s">Strikethroug</tui-text>
+        <tui-text type="samp">Sample output</tui-text>
+        <tui-text type="small">Side comment</tui-text>
+        <tui-text type="span">Content span</tui-text>
+        <tui-text type="strong">Strong importance</tui-text>
+        <tui-text type="sub">Subscript</tui-text>
+        <tui-text type="sup">Superscript</tui-text>
+        <tui-text type="u">Unarticulated annotation</tui-text>
+        <tui-text type="var">Variable</tui-text>
+      </tui-stack>
+
+      <tui-stack>
+        <tui-heading level="2">Textarea</tui-heading>
+        <tui-textarea placeholder="text textarea"></tui-textarea>
+        <tui-textarea placeholder="disabled textarea" disabled></tui-textarea>
+        <tui-textarea placeholder="read only textarea" readOnly></tui-textarea>
+      </tui-stack>
+    </tui-stack>
+    <script>
+      // tui-anchor event handlers
+      document.querySelectorAll("tui-anchor").forEach((element) => {
+        element.addEventListener("tui-click", (event) =>
+          console.log("tui-anchor: tui-click", event.target, event),
+        );
+        element.addEventListener("tui-focus", (event) =>
+          console.log("tui-anchor: tui-focus", event),
+        );
+        element.addEventListener("tui-blur", (event) =>
+          console.log("tui-anchor: tui-blur", event),
+        );
+      });
+
+      // tui-button event handlers
+      document.querySelectorAll("tui-button").forEach((element) => {
+        element.addEventListener("tui-click", (event) =>
+          console.log("tui-button: tui-click", event),
+        );
+        element.addEventListener("tui-focus", (event) =>
+          console.log("tui-button: tui-focus", event),
+        );
+        element.addEventListener("tui-blur", (event) =>
+          console.log("tui-button: tui-blur", event),
+        );
+      });
+
+      // tui-input event handlers
+      document.querySelectorAll("tui-input").forEach((element) => {
+        element.addEventListener("tui-change", (event) =>
+          console.log("tui-input: tui-change", event),
+        );
+        element.addEventListener("tui-click", (event) =>
+          console.log("tui-input: tui-click", event),
+        );
+        element.addEventListener("tui-focus", (event) =>
+          console.log("tui-input: tui-focus", event),
+        );
+        element.addEventListener("tui-blur", (event) =>
+          console.log("tui-input: tui-blur", event),
+        );
+      });
+
+      // tui-textarea event handlers
+      document.querySelectorAll("tui-textarea").forEach((element) => {
+        element.addEventListener("tui-change", (event) =>
+          console.log("tui-textarea: tui-change", event),
+        );
+        element.addEventListener("tui-click", (event) =>
+          console.log("tui-textarea: tui-click", event),
+        );
+        element.addEventListener("tui-focus", (event) =>
+          console.log("tui-textarea: tui-focus", event),
+        );
+        element.addEventListener("tui-blur", (event) =>
+          console.log("tui-textarea: tui-blur", event),
+        );
+      });
+    </script>
   </body>
 </html>

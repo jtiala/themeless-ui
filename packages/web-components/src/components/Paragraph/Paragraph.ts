@@ -1,8 +1,8 @@
 import style from "@themeless-ui/style/dist/paragraph.css?inline";
 import { cn } from "@themeless-ui/utils";
-import { html, unsafeCSS } from "lit";
+import { html, nothing, unsafeCSS } from "lit";
 import { customElement } from "lit/decorators.js";
-import { TUIComponent } from "../../utils";
+import { TUIComponent } from "../TUIComponent";
 
 const className = cn("paragraph");
 
@@ -12,7 +12,11 @@ export class Paragraph extends TUIComponent {
 
   override render() {
     return html`
-      <p class="${className}" id="${this.id}" data-testid="${this.testId}">
+      <p
+        class="${className}"
+        id="${this.id || nothing}"
+        data-testid="${this.testId || nothing}"
+      >
         <slot></slot>
       </p>
     `;
