@@ -15,6 +15,17 @@ export type InputProps = {
   name?: HTMLInputProps["name"];
 
   /**
+   * Brief hint for the user as to what kind of information is expected in the input.
+   */
+  placeholder?: HTMLInputProps["placeholder"];
+
+  /**
+   * The value of the input.
+   * Use only when using the input as controlled component (state handled by React).
+   */
+  value?: HTMLInputProps["value"];
+
+  /**
    * Prevent the user from interacting with the input.
    */
   disabled?: HTMLInputProps["disabled"];
@@ -28,17 +39,6 @@ export type InputProps = {
    * Indicates that the user must specify a value for the input before the owning form can be submitted.
    */
   required?: HTMLInputProps["required"];
-
-  /**
-   * Brief hint for the user as to what kind of information is expected in the input.
-   */
-  placeholder?: HTMLInputProps["placeholder"];
-
-  /**
-   * The value of the input.
-   * Use only when using the input as controlled component (state handled by React).
-   */
-  value?: HTMLInputProps["value"];
 
   /**
    * Callback to call when the input's value is modified.
@@ -69,11 +69,11 @@ const className = cn("input");
 export function Input({
   type = "text",
   name,
+  placeholder,
+  value,
   disabled,
   readOnly,
   required,
-  placeholder,
-  value,
   onChange,
   onClick,
   onFocus,
@@ -85,11 +85,11 @@ export function Input({
     <input
       type={type}
       name={name}
+      placeholder={placeholder}
+      value={value}
       disabled={disabled}
       readOnly={readOnly}
       required={required}
-      placeholder={placeholder}
-      value={value}
       onChange={onChange}
       onClick={onClick}
       onFocus={onFocus}
