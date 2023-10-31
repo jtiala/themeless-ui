@@ -38,7 +38,7 @@ export const TextTypes = {
       </li>
       <li>
         <Description>b</Description>
-        <Text type="b">Bring Attention To</Text>
+        <Text type="b">Bring attention to</Text>
       </li>
       <li>
         <Description>cite</Description>
@@ -46,11 +46,11 @@ export const TextTypes = {
       </li>
       <li>
         <Description>code</Description>
-        <Text type="code">Inline Code</Text>
+        <Text type="code">Inline code</Text>
       </li>
       <li>
         <Description>del</Description>
-        <Text type="del">Deleted Text</Text>
+        <Text type="del">Deleted text</Text>
       </li>
       <li>
         <Description>del with cite</Description>
@@ -59,7 +59,7 @@ export const TextTypes = {
           cite="https://change-explanation.example.com"
           dateTime="2000-01-01H00:00:00"
         >
-          Deleted Text
+          Deleted text
         </Text>
       </li>
       <li>
@@ -68,11 +68,11 @@ export const TextTypes = {
       </li>
       <li>
         <Description>i</Description>
-        <Text type="i">Idiomatic Text</Text>
+        <Text type="i">Idiomatic text</Text>
       </li>
       <li>
         <Description>ins</Description>
-        <Text type="ins">Inserted Text</Text>
+        <Text type="ins">Inserted text</Text>
       </li>
       <li>
         <Description>ins with cite</Description>
@@ -81,25 +81,25 @@ export const TextTypes = {
           cite="https://change-explanation.example.com"
           dateTime="2000-01-01H00:00:00"
         >
-          Inserted Text
+          Inserted text
         </Text>
       </li>
       <li>
         <Description>kbd</Description>
-        <Text type="kbd">Keyboard Input </Text>
+        <Text type="kbd">Keyboard input</Text>
       </li>
       <li>
         <Description>mark</Description>
-        <Text type="mark">Mark Text</Text>
+        <Text type="mark">Mark text</Text>
       </li>
       <li>
         <Description>q</Description>
-        <Text type="q">Inline Quotation</Text>
+        <Text type="q">Inline quotation</Text>
       </li>
       <li>
         <Description>q with cite</Description>
         <Text type="q" cite="https://source-of-the-quote.example.com">
-          Inline Quotation
+          Inline quotation
         </Text>
       </li>
       <li>
@@ -108,19 +108,19 @@ export const TextTypes = {
       </li>
       <li>
         <Description>samp</Description>
-        <Text type="samp">Sample Output</Text>
+        <Text type="samp">Sample output</Text>
       </li>
       <li>
         <Description>small</Description>
-        <Text type="small">Side Comment</Text>
+        <Text type="small">Side comment</Text>
       </li>
       <li>
         <Description>span</Description>
-        <Text type="span">Content Span</Text>
+        <Text type="span">Content span</Text>
       </li>
       <li>
         <Description>strong</Description>
-        <Text type="strong">Strong Importance</Text>
+        <Text type="strong">Strong importance</Text>
       </li>
       <li>
         <Description>sub</Description>
@@ -132,7 +132,7 @@ export const TextTypes = {
       </li>
       <li>
         <Description>u</Description>
-        <Text type="u">Unarticulated Annotation</Text>
+        <Text type="u">Unarticulated annotation</Text>
       </li>
       <li>
         <Description>var</Description>

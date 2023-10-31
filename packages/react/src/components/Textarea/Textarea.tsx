@@ -10,6 +10,17 @@ export type TextareaProps = {
   name?: HTMLTextareaProps["name"];
 
   /**
+   * Brief hint for the user as to what kind of information is expected in the textarea.
+   */
+  placeholder?: HTMLTextareaProps["placeholder"];
+
+  /**
+   * The value of the textarea.
+   * Use only when using the textarea as controlled component (state handled by React).
+   */
+  value?: HTMLTextareaProps["value"];
+
+  /**
    * Prevent the user from interacting with the textarea.
    */
   disabled?: HTMLTextareaProps["disabled"];
@@ -23,17 +34,6 @@ export type TextareaProps = {
    * Indicates that the user must specify a value for the textarea before the owning form can be submitted.
    */
   required?: HTMLTextareaProps["required"];
-
-  /**
-   * Brief hint for the user as to what kind of information is expected in the textarea.
-   */
-  placeholder?: HTMLTextareaProps["placeholder"];
-
-  /**
-   * The value of the textarea.
-   * Use only when using the textarea as controlled component (state handled by React).
-   */
-  value?: HTMLTextareaProps["value"];
 
   /**
    * Callback to call when the textarea's value is modified.
@@ -63,11 +63,11 @@ const className = cn("textarea");
  */
 export function Textarea({
   name,
+  placeholder,
+  value,
   disabled,
   readOnly,
   required,
-  placeholder,
-  value,
   onChange,
   onClick,
   onFocus,
@@ -78,11 +78,11 @@ export function Textarea({
   return (
     <textarea
       name={name}
+      placeholder={placeholder}
+      value={value}
       disabled={disabled}
       readOnly={readOnly}
       required={required}
-      placeholder={placeholder}
-      value={value}
       onChange={onChange}
       onClick={onClick}
       onFocus={onFocus}
