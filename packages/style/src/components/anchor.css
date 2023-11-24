@@ -14,9 +14,9 @@
   text-decoration: underline;
 }
 
-a:link:hover,
-a:link:active,
-a:visited:active,
-a:visited:hover {
+.tui__anchor:link:hover,
+.tui__anchor:link:active,
+.tui__anchor:visited:active,
+.tui__anchor:visited:hover {
   color: darkblue;
 }
