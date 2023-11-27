@@ -12,7 +12,7 @@
   overflow-wrap: break-word;
 }
 
-.tui__blockquote footer {
+.tui__blockquote > footer {
   margin: var(--tui__spacing-16) 0;
 }
 

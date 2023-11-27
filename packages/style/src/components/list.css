@@ -13,7 +13,7 @@ ol.tui__list {
   list-style-type: decimal;
 }
 
-.tui__list li {
+.tui__list > li {
   box-sizing: border-box;
   color: var(--tui__color-black);
   font-family: var(--tui__font-family-serif);
