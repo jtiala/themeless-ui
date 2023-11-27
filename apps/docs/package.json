@@ -19,7 +19,7 @@
     "storybook-static",
     "CHANGELOG.md"
   ],
-  "packageManager": "pnpm@8.10.0",
+  "packageManager": "pnpm@8.11.0",
   "scripts": {
     "dev": "storybook dev -p 6006 --no-open",
     "build": "storybook build",
