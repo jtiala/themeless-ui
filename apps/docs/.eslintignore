@@ -2,3 +2,4 @@ node_modules
 .turbo
 storybook-static
 reports
+!.storybook

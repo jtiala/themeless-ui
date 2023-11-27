@@ -1,13 +1,16 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { injectAxe, checkA11y, configureAxe } = require("axe-playwright");
-const { getStoryContext } = require("@storybook/test-runner");
+import { TestRunnerConfig, getStoryContext } from "@storybook/test-runner";
+import { checkA11y, configureAxe, injectAxe } from "axe-playwright";
 
-const config = {
-  async preRender(page) {
+const config: TestRunnerConfig = {
+  async preVisit(page) {
     await injectAxe(page);
   },
-  async postRender(page, context) {
+  async postVisit(page, context) {
     const storyContext = await getStoryContext(page, context);
+
+    if (storyContext.parameters?.a11y?.disable) {
+      return;
+    }
 
     await configureAxe(page, {
       rules: storyContext.parameters?.a11y?.config?.rules,
@@ -19,8 +22,9 @@ const config = {
       detailedReportOptions: {
         html: true,
       },
+      axeOptions: storyContext.parameters?.a11y?.options,
     });
   },
 };
 
-module.exports = config;
+export default config;
