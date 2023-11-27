@@ -30,20 +30,20 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "upgrade": "ncu -ui && ncu -ui --packageFile **/packages/**/package.json && ncu -ui --packageFile **/apps/**/package.json",
+    "update-dependencies": "ncu -ui --install never && ncu -ui --install never --packageFile **/packages/**/package.json && ncu -ui --install never --packageFile **/apps/**/package.json",
     "publish:npm": "pnpm publish && turbo run publish:npm",
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "18.2.0",
-    "@commitlint/config-conventional": "18.1.0",
-    "@playwright/test": "1.39.0",
+    "@commitlint/cli": "18.4.3",
+    "@commitlint/config-conventional": "18.4.3",
+    "@playwright/test": "1.40.0",
     "@themeless-ui/eslint-config": "workspace:*",
-    "eslint": "8.52.0",
+    "eslint": "8.54.0",
     "husky": "8.0.3",
-    "lint-staged": "15.0.2",
-    "npm-check-updates": "16.14.6",
-    "prettier": "3.0.3",
+    "lint-staged": "15.1.0",
+    "npm-check-updates": "16.14.11",
+    "prettier": "3.1.0",
     "turbo": "1.10.16"
   }
 }

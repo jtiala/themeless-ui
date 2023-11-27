@@ -60,16 +60,16 @@
     "@storybook/test-runner": "0.15.2",
     "@themeless-ui/eslint-config": "workspace:*",
     "@themeless-ui/typescript-config": "workspace:*",
-    "@types/react": "18.2.33",
-    "@types/react-dom": "18.2.14",
+    "@types/react": "18.2.38",
+    "@types/react-dom": "18.2.17",
     "axe-core": "4.8.2",
     "axe-playwright": "1.2.3",
     "concurrently": "8.2.2",
-    "eslint": "8.52.0",
+    "eslint": "8.54.0",
     "serve": "14.2.1",
     "storybook": "7.5.3",
-    "typescript": "5.2.2",
-    "vite": "4.5.0",
+    "typescript": "5.3.2",
+    "vite": "5.0.2",
     "wait-on": "7.2.0"
   }
 }
