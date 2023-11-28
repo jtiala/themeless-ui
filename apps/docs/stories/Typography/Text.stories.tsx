@@ -104,7 +104,7 @@ export const TextTypes = {
       </li>
       <li>
         <Description>s</Description>
-        <Text type="s">Strikethroug</Text>
+        <Text type="s">Strikethrough</Text>
       </li>
       <li>
         <Description>samp</Description>
