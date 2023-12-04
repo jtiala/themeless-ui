@@ -21,47 +21,47 @@ export type AnchorProps = {
   /**
    * Where to display the linked URL.
    */
-  target?: AnchorHTMLAttributes<HTMLAnchorElement>["target"];
+  target?: HTMLAnchorProps["target"];
 
   /**
    * Causes the browser to treat the linked URL as a download.
    */
-  download?: AnchorHTMLAttributes<HTMLAnchorElement>["download"];
+  download?: HTMLAnchorProps["download"];
 
   /**
    * A function that is called when the anchor is clicked.
    */
-  onClick?: AnchorHTMLAttributes<HTMLAnchorElement>["onClick"];
+  onClick?: HTMLAnchorProps["onClick"];
 
   /**
    * A function that is called when the anchor is focused.
    */
-  onFocus?: AnchorHTMLAttributes<HTMLAnchorElement>["onFocus"];
+  onFocus?: HTMLAnchorProps["onFocus"];
 
   /**
    * A function that is called when the anchor hast lost focus.
    */
-  onBlur?: AnchorHTMLAttributes<HTMLAnchorElement>["onBlur"];
+  onBlur?: HTMLAnchorProps["onBlur"];
 
   /**
    * A function that is called when mouse enters the anchor.
    */
-  onMouseEnter?: AnchorHTMLAttributes<HTMLAnchorElement>["onMouseEnter"];
+  onMouseEnter?: HTMLAnchorProps["onMouseEnter"];
 
   /**
    * A function that is called when mouse leaves the anchor.
    */
-  onMouseLeave?: AnchorHTMLAttributes<HTMLAnchorElement>["onMouseLeave"];
+  onMouseLeave?: HTMLAnchorProps["onMouseLeave"];
 
   /**
    * A function that is called when one or more touch points are placed on the touch surface.
    */
-  onTouchStart?: AnchorHTMLAttributes<HTMLAnchorElement>["onTouchStart"];
+  onTouchStart?: HTMLAnchorProps["onTouchStart"];
 
   /**
    * A function that is called when one or more touch points are removed from the touch surface.
    */
-  onTouchEnd?: AnchorHTMLAttributes<HTMLAnchorElement>["onTouchEnd"];
+  onTouchEnd?: HTMLAnchorProps["onTouchEnd"];
 
   /**
    * Anchor content.
