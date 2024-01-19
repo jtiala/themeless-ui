@@ -21,9 +21,9 @@
   ],
   "packageManager": "pnpm@8.14.1",
   "scripts": {
-    "dev": "storybook dev -p 6006 --no-open",
+    "dev": "storybook dev -p 3000 --no-open",
     "build": "storybook build",
-    "preview": "serve storybook-static",
+    "preview": "serve -p 3100 storybook-static",
     "test": "pnpm run test:storybook:standalone",
     "test:report": "pnpm run test:storybook:standalone:report",
     "test:storybook:prepare": "pnpm exec playwright install --with-deps",

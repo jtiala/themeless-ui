@@ -20,12 +20,16 @@
   ],
   "packageManager": "pnpm@8.7.6",
   "scripts": {
+    "dev": "serve -p 3003",
     "clean": "rm -rf node_modules .turbo",
     "publish:npm": "pnpm publish --access public"
   },
   "dependencies": {
-    "@themeless-ui/web-components": "workspace:*",
     "@themeless-ui/style": "workspace:*",
-    "@themeless-ui/theme-default": "workspace:*"
+    "@themeless-ui/theme-default": "workspace:*",
+    "@themeless-ui/web-components": "workspace:*"
+  },
+  "devDependencies": {
+    "serve": "14.2.1"
   }
 }

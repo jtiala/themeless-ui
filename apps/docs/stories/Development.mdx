@@ -24,6 +24,13 @@ The project is organized as a monorepo powered by [Turborepo](https://turbo.buil
    pnpm run dev
    ```
 
+3. The following development environments should now be accessible:
+
+   - `apps/docs` at [localhost:3000](http://localhost:3000)
+   - `apps/react-example` at [localhost:3001](http://localhost:3001)
+   - `apps/nextjs-example` at [localhost:3002](http://localhost:3002)
+   - `apps/web-components-example` at [localhost:3003](http://localhost:3003)
+
 ## Testing, linting and formatting
 
 Tests, linters and formatters can be run for all the packages by running the next commands in the root directory. The same commands can be also used in the package subdirectories.
@@ -38,11 +45,23 @@ Linters and formatters are also run in a pre-commit hook for all the staged file
 
 ## Building
 
-To build the library, use the following command.
+To build all the packages, use the following command.
 
 ```console
 pnpm run build
 ```
+
+You can preview all the built apps by running the following command.
+
+```console
+pnpm run preview
+```
+
+These apps should now be accessible
+
+- `apps/docs` at [localhost:3100](http://localhost:3100)
+- `apps/react-example` at [localhost:3101](http://localhost:3101)
+- `apps/nextjs-example` at [localhost:3102](http://localhost:3102)
 
 _Note:_ Building is required to use new code from one package in another one locally. For example, if a new component is added in `packages/react`, a build is required to use the component in `apps/docs`.
 
