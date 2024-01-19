@@ -29,7 +29,7 @@
     "dist",
     "CHANGELOG.md"
   ],
-  "packageManager": "pnpm@8.11.0",
+  "packageManager": "pnpm@8.14.1",
   "scripts": {
     "build": "vite build",
     "test": "pnpm run test:vitest",
@@ -57,22 +57,22 @@
     "@themeless-ui/utils": "workspace:*"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "6.1.4",
+    "@testing-library/jest-dom": "6.2.0",
     "@testing-library/react": "14.1.2",
-    "@testing-library/user-event": "14.5.1",
+    "@testing-library/user-event": "14.5.2",
     "@themeless-ui/eslint-config": "workspace:*",
     "@themeless-ui/typescript-config": "workspace:*",
-    "@types/react-dom": "18.2.17",
+    "@types/react-dom": "18.2.18",
     "@types/react-test-renderer": "18.0.7",
-    "@types/react": "18.2.38",
-    "@vitejs/plugin-react": "4.2.0",
-    "@vitest/coverage-v8": "0.34.6",
-    "eslint": "8.54.0",
-    "jsdom": "23.0.0",
+    "@types/react": "18.2.48",
+    "@vitejs/plugin-react": "4.2.1",
+    "@vitest/coverage-v8": "1.2.1",
+    "eslint": "8.56.0",
+    "jsdom": "23.2.0",
     "react-test-renderer": "18.2.0",
-    "typescript": "5.3.2",
-    "vite-plugin-dts": "3.6.3",
-    "vite": "5.0.2",
-    "vitest": "0.34.6"
+    "typescript": "5.3.3",
+    "vite-plugin-dts": "3.7.1",
+    "vite": "5.0.12",
+    "vitest": "1.2.1"
   }
 }

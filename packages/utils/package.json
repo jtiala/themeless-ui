@@ -28,7 +28,7 @@
     "dist",
     "CHANGELOG.md"
   ],
-  "packageManager": "pnpm@8.11.0",
+  "packageManager": "pnpm@8.14.1",
   "scripts": {
     "build": "vite build",
     "test": "pnpm run test:vitest",
@@ -51,11 +51,11 @@
   "devDependencies": {
     "@themeless-ui/eslint-config": "workspace:*",
     "@themeless-ui/typescript-config": "workspace:*",
-    "@vitest/coverage-v8": "0.34.6",
-    "eslint": "8.54.0",
-    "typescript": "5.3.2",
-    "vite-plugin-dts": "3.6.3",
-    "vite": "5.0.2",
-    "vitest": "0.34.6"
+    "@vitest/coverage-v8": "1.2.1",
+    "eslint": "8.56.0",
+    "typescript": "5.3.3",
+    "vite-plugin-dts": "3.7.1",
+    "vite": "5.0.12",
+    "vitest": "1.2.1"
   }
 }
