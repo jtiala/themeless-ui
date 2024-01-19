@@ -23,6 +23,7 @@
     "build": "turbo run build",
     "preview": "turbo run preview",
     "test": "turbo run test",
+    "test:prepare": "turbo run test:prepare",
     "test:report": "turbo run test:report",
     "lint": "turbo run lint",
     "lint:report": "turbo run lint:report",

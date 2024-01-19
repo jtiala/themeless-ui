@@ -26,6 +26,7 @@
     "build": "next build",
     "preview": "next start -p 3102",
     "test": "pnpm run test:playwright",
+    "test:prepare": "pnpm run test:playwright:prepare",
     "test:report": "pnpm run test:playwright:report",
     "test:playwright:prepare": "pnpm exec playwright install --with-deps",
     "test:playwright": "PLAYWRIGHT_HTML_REPORT=./reports/test-report-playwright playwright test --reporter=html",
