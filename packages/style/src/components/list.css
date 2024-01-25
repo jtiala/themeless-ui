@@ -1,8 +1,13 @@
 .tui__list {
   display: block;
   box-sizing: border-box;
-  padding-left: var(--tui__spacing-32);
-  margin: var(--tui__spacing-16) 0;
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+}
+
+.tui__list .tui__list {
+  padding: 0 0 0 var(--tui__spacing-16);
 }
 
 ul.tui__list {
@@ -10,7 +15,7 @@ ul.tui__list {
 }
 
 ol.tui__list {
-  list-style-type: decimal;
+  counter-reset: item;
 }
 
 .tui__list > li {
@@ -23,4 +28,22 @@ ol.tui__list {
   font-weight: var(--tui__font-weight-normal);
   line-height: var(--tui__line-height-md);
   overflow-wrap: break-word;
+}
+
+ol.tui__list > li {
+  display: block;
+}
+
+ol.tui__list > li::before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+
+.tui__prose .tui__list {
+  padding: 0 0 0 var(--tui__spacing-16);
+  margin: 0 0 var(--tui__spacing-16) 0;
+}
+
+.tui__prose :is(.tui__list > li) > .tui__list {
+  margin: 0;
 }

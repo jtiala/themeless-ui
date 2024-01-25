@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Stack } from "@themeless-ui/react";
+import { SizeElement } from "../../utils";
 
 const meta = {
   title: "Layout/Stack",
@@ -10,11 +11,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const children = [
-  <div key="1">1</div>,
-  <div key="2">2</div>,
-  <div key="3">3</div>,
-];
+const children = [...Array(3).keys()].map((n) => <SizeElement key={n} />);
 
 export const Vertical: Story = {
   args: {

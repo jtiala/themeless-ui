@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Text } from "@themeless-ui/react";
-import { ReactNode } from "react";
+import { ExampleGrid, ExampleTitle } from "../../utils";
 
 const meta = {
   title: "Typography/Text",
@@ -17,170 +17,112 @@ export const Default: Story = {
   },
 };
 
-const Description = ({ children }: { children: ReactNode }) => (
-  <Text type="code">
-    <Text type="var">{children}</Text>:{" "}
-  </Text>
-);
-
 export const TextTypes = {
   render: () => (
-    <ul>
-      <li>
-        <Description>abbr</Description>
-        <Text type="abbr">Abbreviation</Text>
-      </li>
-      <li>
-        <Description>abbr with title</Description>
-        <Text type="abbr" title="Abbreviation extension">
-          Abbreviation
-        </Text>
-      </li>
-      <li>
-        <Description>b</Description>
-        <Text type="b">Bring attention to</Text>
-      </li>
-      <li>
-        <Description>cite</Description>
-        <Text type="cite">Citation</Text>
-      </li>
-      <li>
-        <Description>code</Description>
-        <Text type="code">Inline code</Text>
-      </li>
-      <li>
-        <Description>del</Description>
-        <Text type="del">Deleted text</Text>
-      </li>
-      <li>
-        <Description>del with cite</Description>
-        <Text
-          type="del"
-          cite="https://change-explanation.example.com"
-          dateTime="2000-01-01H00:00:00"
-        >
-          Deleted text
-        </Text>
-      </li>
-      <li>
-        <Description>em</Description>
-        <Text type="em">Emphasis</Text>
-      </li>
-      <li>
-        <Description>i</Description>
-        <Text type="i">Idiomatic text</Text>
-      </li>
-      <li>
-        <Description>ins</Description>
-        <Text type="ins">Inserted text</Text>
-      </li>
-      <li>
-        <Description>ins with cite</Description>
-        <Text
-          type="ins"
-          cite="https://change-explanation.example.com"
-          dateTime="2000-01-01H00:00:00"
-        >
-          Inserted text
-        </Text>
-      </li>
-      <li>
-        <Description>kbd</Description>
-        <Text type="kbd">Keyboard input</Text>
-      </li>
-      <li>
-        <Description>mark</Description>
-        <Text type="mark">Mark text</Text>
-      </li>
-      <li>
-        <Description>q</Description>
-        <Text type="q">Inline quotation</Text>
-      </li>
-      <li>
-        <Description>q with cite</Description>
-        <Text type="q" cite="https://source-of-the-quote.example.com">
-          Inline quotation
-        </Text>
-      </li>
-      <li>
-        <Description>s</Description>
-        <Text type="s">Strikethrough</Text>
-      </li>
-      <li>
-        <Description>samp</Description>
-        <Text type="samp">Sample output</Text>
-      </li>
-      <li>
-        <Description>small</Description>
-        <Text type="small">Side comment</Text>
-      </li>
-      <li>
-        <Description>span</Description>
-        <Text type="span">Content span</Text>
-      </li>
-      <li>
-        <Description>strong</Description>
-        <Text type="strong">Strong importance</Text>
-      </li>
-      <li>
-        <Description>sub</Description>
-        <Text type="sub">Subscript</Text>
-      </li>
-      <li>
-        <Description>sup</Description>
-        <Text type="sup">Superscript</Text>
-      </li>
-      <li>
-        <Description>u</Description>
-        <Text type="u">Unarticulated annotation</Text>
-      </li>
-      <li>
-        <Description>var</Description>
-        <Text type="var">Variable</Text>
-      </li>
-    </ul>
+    <ExampleGrid columns={2}>
+      <ExampleTitle>abbr</ExampleTitle>
+      <Text type="abbr">Abbreviation</Text>
+      <ExampleTitle>abbr with title</ExampleTitle>
+      <Text type="abbr" title="Abbreviation extension">
+        Abbreviation
+      </Text>
+      <ExampleTitle>b</ExampleTitle>
+      <Text type="b">Bring attention to</Text>
+      <ExampleTitle>cite</ExampleTitle>
+      <Text type="cite">Citation</Text>
+      <ExampleTitle>code</ExampleTitle>
+      <Text type="code">Inline code</Text>
+      <ExampleTitle>del</ExampleTitle>
+      <Text type="del">Deleted text</Text>
+      <ExampleTitle>del with cite</ExampleTitle>
+      <Text
+        type="del"
+        cite="https://change-explanation.example.com"
+        dateTime="2000-01-01H00:00:00"
+      >
+        Deleted text
+      </Text>
+      <ExampleTitle>em</ExampleTitle>
+      <Text type="em">Emphasis</Text>
+      <ExampleTitle>i</ExampleTitle>
+      <Text type="i">Idiomatic text</Text>
+      <ExampleTitle>ins</ExampleTitle>
+      <Text type="ins">Inserted text</Text>
+      <ExampleTitle>ins with cite</ExampleTitle>
+      <Text
+        type="ins"
+        cite="https://change-explanation.example.com"
+        dateTime="2000-01-01H00:00:00"
+      >
+        Inserted text
+      </Text>
+      <ExampleTitle>kbd</ExampleTitle>
+      <Text type="kbd">Keyboard input</Text>
+      <ExampleTitle>mark</ExampleTitle>
+      <Text type="mark">Mark text</Text>
+      <ExampleTitle>q</ExampleTitle>
+      <Text type="q">Inline quotation</Text>
+      <ExampleTitle>q with cite</ExampleTitle>
+      <Text type="q" cite="https://source-of-the-quote.example.com">
+        Inline quotation
+      </Text>
+      <ExampleTitle>s</ExampleTitle>
+      <Text type="s">Strikethrough</Text>
+      <ExampleTitle>samp</ExampleTitle>
+      <Text type="samp">Sample output</Text>
+      <ExampleTitle>small</ExampleTitle>
+      <Text type="small">Side comment</Text>
+      <ExampleTitle>span</ExampleTitle>
+      <Text type="span">Content span</Text>
+      <ExampleTitle>strong</ExampleTitle>
+      <Text type="strong">Strong importance</Text>
+      <ExampleTitle>sub</ExampleTitle>
+      <Text type="sub">Subscript</Text>
+      <ExampleTitle>sup</ExampleTitle>
+      <Text type="sup">Superscript</Text>
+      <ExampleTitle>u</ExampleTitle>
+      <Text type="u">Unarticulated annotation</Text>
+      <ExampleTitle>var</ExampleTitle>
+      <Text type="var">Variable</Text>
+    </ExampleGrid>
   ),
 };
 
 export const CombiningTextTypes = {
   render: () => (
-    <ul>
-      <li>
-        <Description>strong in mark</Description>
-        <Text type="mark">
-          Lorem ipsum dolor <Text type="strong">sit amet</Text>, consectetur
-          adipiscing elit.
+    <ExampleGrid columns={2}>
+      <ExampleTitle>code in span</ExampleTitle>
+      <Text>
+        sans-serif <Text type="code">monospace</Text> sans-serif
+      </Text>
+      <ExampleTitle>strong in mark</ExampleTitle>
+      <Text type="mark">
+        Lorem ipsum dolor <Text type="strong">sit amet</Text>, consectetur
+        adipiscing elit.
+      </Text>
+      <ExampleTitle>del and ins in cite</ExampleTitle>
+      <Text>
+        Lorem ipsum{" "}
+        <Text type="cite">
+          <Text type="del">dolor</Text>
+          <Text type="ins">sit amet</Text>
         </Text>
-      </li>
-      <li>
-        <Description>del and ins in cite</Description>
-        <Text>
-          Lorem ipsum{" "}
-          <Text type="cite">
-            <Text type="del">dolor</Text>
-            <Text type="ins">sit amet</Text>
-          </Text>
-          , consectetur adipiscing elit.
-        </Text>
-      </li>
-      <li>
-        <Description>var in code</Description>
-        <Text type="code">
-          let <Text type="var">foo</Text> = &quot;bar&quot;;
-        </Text>
-      </li>
-      <li>
-        <Description>samp in kbd</Description>
+        , consectetur adipiscing elit.
+      </Text>
+      <ExampleTitle>var in code</ExampleTitle>
+      <Text type="code">
+        let <Text type="var">foo</Text> = &quot;bar&quot;;
+      </Text>
+      <ExampleTitle>samp in kbd</ExampleTitle>
+      <Text type="kbd">
         <Text type="kbd">
-          <Text type="kbd">
-            <Text type="samp">File</Text>
-          </Text>
-          ⇒
-          <Text type="kbd">
-            <Text type="samp">New Document</Text>
-          </Text>
+          <Text type="samp">File</Text>
         </Text>
-      </li>
-    </ul>
+        ⇒
+        <Text type="kbd">
+          <Text type="samp">New Document</Text>
+        </Text>
+      </Text>
+    </ExampleGrid>
   ),
 };

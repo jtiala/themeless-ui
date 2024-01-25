@@ -1,7 +1,7 @@
 .tui__paragraph {
   display: block;
   box-sizing: border-box;
-  margin: var(--tui__spacing-16) 0;
+  margin: 0;
   color: var(--tui__color-black);
   font-family: var(--tui__font-family-serif);
   font-size: var(--tui__font-size-md);
@@ -12,6 +12,10 @@
   overflow-wrap: break-word;
 }
 
-:is(h1, h2, h3, h4, h5, h6) + .tui__paragraph {
+.tui__prose .tui__paragraph {
+  margin: var(--tui__spacing-16) 0;
+}
+
+.tui__prose :is(h1, h2, h3, h4, h5, h6) + .tui__paragraph {
   margin-top: 0;
 }

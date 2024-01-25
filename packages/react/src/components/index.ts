@@ -5,6 +5,7 @@ export * from "./Heading";
 export * from "./Input";
 export * from "./List";
 export * from "./Paragraph";
+export * from "./Prose";
 export * from "./Stack";
 export * from "./Text";
 export * from "./Textarea";

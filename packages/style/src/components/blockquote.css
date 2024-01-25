@@ -1,7 +1,7 @@
 .tui__blockquote {
   display: block;
   box-sizing: border-box;
-  margin: var(--tui__spacing-16) var(--tui__spacing-32);
+  margin: 0;
   color: var(--tui__color-black);
   font-family: var(--tui__font-family-serif);
   font-size: var(--tui__font-size-md);
@@ -13,9 +13,13 @@
 }
 
 .tui__blockquote > footer {
-  margin: var(--tui__spacing-16) 0;
+  margin-top: var(--tui__spacing-16);
 }
 
 .tui__blockquote-source {
   font-style: italic;
+}
+
+.tui__prose .tui__blockquote {
+  margin: var(--tui__spacing-16) var(--tui__spacing-32);
 }

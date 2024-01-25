@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Blockquote, Paragraph } from "@themeless-ui/react";
+import { Blockquote, Paragraph, Prose } from "@themeless-ui/react";
 
 const meta = {
   title: "Typography/Blockquote",
@@ -40,4 +40,16 @@ export const WithoutAuthor: Story = {
     source,
     children,
   },
+};
+
+export const UsingWithProse = {
+  render: () => (
+    <Prose>
+      <Paragraph>{lipsum}</Paragraph>
+      <Blockquote cite={cite} author={author} source={source}>
+        {lipsum}
+      </Blockquote>
+      <Paragraph>{lipsum}</Paragraph>
+    </Prose>
+  ),
 };

@@ -10,48 +10,66 @@
 }
 
 h1.tui__heading {
-  margin-bottom: var(--tui__spacing-24);
   font-size: var(--tui__font-size-3xl);
   font-weight: var(--tui__font-weight-extra-bold);
   line-height: var(--tui__line-height-sm);
 }
 
 h2.tui__heading {
-  margin-top: var(--tui__spacing-40);
-  margin-bottom: var(--tui__spacing-16);
   font-size: var(--tui__font-size-2xl);
   font-weight: var(--tui__font-weight-bold);
   line-height: var(--tui__line-height-sm);
 }
 
 h3.tui__heading {
-  margin-top: var(--tui__spacing-32);
-  margin-bottom: var(--tui__spacing-12);
   font-size: var(--tui__font-size-xl);
   font-weight: var(--tui__font-weight-semi-bold);
   line-height: var(--tui__line-height-md);
 }
 
 h4.tui__heading {
-  margin-top: var(--tui__spacing-24);
-  margin-bottom: var(--tui__spacing-8);
   font-size: var(--tui__font-size-md);
   font-weight: var(--tui__font-weight-semi-bold);
   line-height: var(--tui__line-height-md);
 }
 
 h5.tui__heading {
-  margin-top: var(--tui__spacing-24);
-  margin-bottom: var(--tui__spacing-8);
   font-size: var(--tui__font-size-md);
   font-weight: var(--tui__font-weight-semi-bold);
   line-height: var(--tui__line-height-md);
 }
 
 h6.tui__heading {
-  margin-top: var(--tui__spacing-24);
-  margin-bottom: var(--tui__spacing-8);
   font-size: var(--tui__font-size-md);
   font-weight: var(--tui__font-weight-semi-bold);
   line-height: var(--tui__line-height-md);
+}
+
+.tui__prose h1.tui__heading {
+  margin-bottom: var(--tui__spacing-24);
+}
+
+.tui__prose h2.tui__heading {
+  margin-top: var(--tui__spacing-40);
+  margin-bottom: var(--tui__spacing-16);
+}
+
+.tui__prose h3.tui__heading {
+  margin-top: var(--tui__spacing-32);
+  margin-bottom: var(--tui__spacing-12);
+}
+
+.tui__prose h4.tui__heading {
+  margin-top: var(--tui__spacing-24);
+  margin-bottom: var(--tui__spacing-8);
+}
+
+.tui__prose h5.tui__heading {
+  margin-top: var(--tui__spacing-24);
+  margin-bottom: var(--tui__spacing-8);
+}
+
+.tui__prose h6.tui__heading {
+  margin-top: var(--tui__spacing-24);
+  margin-bottom: var(--tui__spacing-8);
 }

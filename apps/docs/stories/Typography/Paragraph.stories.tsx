@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Paragraph, Text } from "@themeless-ui/react";
+import { Paragraph, Prose, Text } from "@themeless-ui/react";
 
 const meta = {
   title: "Typography/Paragraph",
@@ -19,19 +19,23 @@ export const Default: Story = {
   },
 };
 
+export const UsingWithProse = {
+  render: () => (
+    <Prose>
+      <Paragraph>{lipsum}</Paragraph>
+      <Paragraph>{lipsum}</Paragraph>
+    </Prose>
+  ),
+};
+
 export const UsingWithText = {
   render: () => (
-    <>
-      <Paragraph>{lipsum}</Paragraph>
-      <Paragraph>
-        <Text type="del">Lorem ipsum dolor sit amet</Text>
-        <Text type="ins">Donec accumsan ex vellacinia volutpat.</Text> Ut
-        tricies, <Text type="mark">mauris</Text> et{" "}
-        <Text type="small">varius</Text> finibus,{" "}
-        <Text type="strong">nulla ante</Text> efficitur libero, eget convallis{" "}
-        <Text type="code">odio ex ut</Text> neque.
-      </Paragraph>
-      <Paragraph>{lipsum}</Paragraph>
-    </>
+    <Paragraph>
+      <Text type="del">Lorem ipsum dolor sit amet</Text>
+      <Text type="ins">Donec accumsan ex vellacinia volutpat.</Text> Ut tricies,{" "}
+      <Text type="mark">mauris</Text> et <Text type="small">varius</Text>{" "}
+      finibus, <Text type="strong">nulla ante</Text> efficitur libero, eget
+      convallis <Text type="code">odio ex ut</Text> neque.
+    </Paragraph>
   ),
 };

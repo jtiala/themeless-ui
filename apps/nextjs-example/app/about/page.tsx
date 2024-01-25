@@ -1,9 +1,9 @@
-import { Heading, Paragraph, Stack } from "@themeless-ui/react";
+import { Heading, Paragraph, Prose } from "@themeless-ui/react";
 
 export default async function About() {
   return (
     <article>
-      <Stack>
+      <Prose>
         <Heading level={1}>About</Heading>
         <Paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar
@@ -14,7 +14,7 @@ export default async function About() {
           taciti sociosqu ad litora torquent per conubia nostra, per inceptos
           himenaeos.
         </Paragraph>
-      </Stack>
+      </Prose>
     </article>
   );
 }

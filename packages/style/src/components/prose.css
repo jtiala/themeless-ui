@@ -1,0 +1,5 @@
+.tui__prose {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: column nowrap;
+}
