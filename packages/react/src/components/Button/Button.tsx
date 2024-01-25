@@ -43,7 +43,7 @@ export type ButtonProps = {
 const className = cn("button");
 
 /**
- * A clickable UI element commonly used to trigger actions, such as submitting a form.
+ * An interactive element used for triggering actions. Shouldn't be used for navigating.
  */
 export function Button({
   type = "button",

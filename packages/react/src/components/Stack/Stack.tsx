@@ -18,7 +18,7 @@ const verticalClassName = cn("stack-vertical");
 const horizontalClassName = cn("stack-horizontal");
 
 /**
- * Display a stack of items.
+ * A layout element for stacking content.
  */
 export function Stack({
   direction = "vertical",

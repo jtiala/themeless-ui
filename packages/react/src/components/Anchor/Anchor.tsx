@@ -72,7 +72,7 @@ export type AnchorProps = {
 const className = cn("anchor");
 
 /**
- * Display a hyperlink.
+ * A hyperlink used for navigation within the application or to external resources.
  */
 export function Anchor({
   href,

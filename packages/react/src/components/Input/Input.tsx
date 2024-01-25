@@ -64,7 +64,7 @@ export type InputProps = {
 const className = cn("input");
 
 /**
- * Display an input.
+ * A input field that can be used for various input scenarios.
  */
 export function Input({
   type = "text",

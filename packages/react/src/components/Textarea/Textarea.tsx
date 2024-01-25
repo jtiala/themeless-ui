@@ -59,7 +59,7 @@ export type TextareaProps = {
 const className = cn("textarea");
 
 /**
- * Display an textarea.
+ * Capture user input as multiline text.
  */
 export function Textarea({
   name,
