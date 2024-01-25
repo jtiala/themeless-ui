@@ -8,13 +8,11 @@ type ListItemElement = ReactElement<ListItemProps, typeof ListItem>;
 export type ListProps = {
   /**
    * Type of the list.
-   *
-   * @default unordered
    */
   type?: ListType;
 
   /**
-   * One or more <List.Item> elements.
+   * One or more `<List.Item>` elements.
    */
   children?: ListItemElement | ListItemElement[] | ReactNode; // ReactNode is needed for MDXComponents
 } & CommonComponentProps;
@@ -22,13 +20,12 @@ export type ListProps = {
 const className = cn("list");
 
 /**
- * Display a list of items.
+ * A list of items.
  */
-export function List({ type, children, id, testId }: ListProps) {
-  const element = type === "ordered" ? "ol" : "ul";
-
+export function List({ type = "unordered", children, id, testId }: ListProps) {
   return createElement(
-    element,
+    type === "ordered" ? "ol" : "ul",
+
     { className, id, "data-testid": testId },
     children,
   );

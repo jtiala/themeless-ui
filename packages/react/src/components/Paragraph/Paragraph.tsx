@@ -11,7 +11,7 @@ export type ParagraphProps = {
 const className = cn("paragraph");
 
 /**
- * Display a text paragraph.
+ * A paragraph of text.
  */
 export function Paragraph({ children, id, testId }: ParagraphProps) {
   return (

@@ -18,13 +18,11 @@ export type HeadingProps = {
 const className = cn("heading");
 
 /**
- * Display a section heading.
+ * A heading.
  */
 export function Heading({ level, children, id, testId }: HeadingProps) {
-  const element = "h" + level;
-
   return createElement(
-    element,
+    `h${level}`,
     { className, id, "data-testid": testId },
     children,
   );

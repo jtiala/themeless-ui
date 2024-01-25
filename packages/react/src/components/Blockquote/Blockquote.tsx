@@ -29,7 +29,7 @@ const authorClassName = cn("blockquote-author");
 const sourceClassName = cn("blockquote-source");
 
 /**
- * Display an extended quotation.
+ * A visual element for displaying blockquotes or cited sections of text.
  */
 export function Blockquote({
   cite,

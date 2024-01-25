@@ -9,7 +9,7 @@ export type ListItemProps = {
 } & CommonComponentProps;
 
 /**
- * Display a list item.
+ * A list item.
  */
 export function ListItem({ children, id, testId }: ListItemProps) {
   return (
