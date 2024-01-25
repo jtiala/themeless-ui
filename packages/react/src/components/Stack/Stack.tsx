@@ -1,4 +1,4 @@
-import { CommonComponentProps, cn } from "@themeless-ui/utils";
+import { CommonComponentProps, cn, cns } from "@themeless-ui/utils";
 import { ReactNode } from "react";
 
 export type StackProps = {
@@ -26,10 +26,10 @@ export function Stack({
   id,
   testId,
 }: StackProps) {
-  const classNames = [
-    stackClassName,
-    direction === "vertical" ? verticalClassName : horizontalClassName,
-  ].join(" ");
+  const classNames = cns(stackClassName, {
+    [verticalClassName]: direction === "vertical",
+    [horizontalClassName]: direction === "horizontal",
+  });
 
   return (
     <div className={classNames} id={id} data-testid={testId}>

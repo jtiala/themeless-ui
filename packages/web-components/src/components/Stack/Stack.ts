@@ -1,5 +1,5 @@
 import style from "@themeless-ui/style/dist/stack.css?inline";
-import { cn } from "@themeless-ui/utils";
+import { cn, cns } from "@themeless-ui/utils";
 import { html, nothing, unsafeCSS } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import { TUIComponent } from "../TUIComponent";
@@ -29,10 +29,10 @@ export class Stack extends TUIComponent {
   }
 
   override render() {
-    const classNames = [
-      stackClassName,
-      this.direction === "vertical" ? verticalClassName : horizontalClassName,
-    ].join(" ");
+    const classNames = cns(stackClassName, {
+      [verticalClassName]: this.direction === "vertical",
+      [horizontalClassName]: this.direction === "horizontal",
+    });
 
     return html`
       <div
