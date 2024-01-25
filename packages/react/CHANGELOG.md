@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.7.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/react-v0.6.0...@themeless-ui/react-v0.7.0) (2024-01-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* updating Vite to v5
+
+### Features
+
+* add Prose component ([535ebfb](https://github.com/jtiala/themeless-ui/commit/535ebfbcba38d54d1b2b4031434c4d57fad97c0c))
+* use cns util in stack class names ([b1eecbe](https://github.com/jtiala/themeless-ui/commit/b1eecbe4061db09d10b62820c14f65e56104c74b))
+
+
+### Bug Fixes
+
+* use type stored in const ([39c8de0](https://github.com/jtiala/themeless-ui/commit/39c8de0c56b28ac5d0bc760bf39ba9bb1e98fced))
+
+
+### Miscellaneous Chores
+
+* update dependencies ([16cbe59](https://github.com/jtiala/themeless-ui/commit/16cbe5930d00029f4cb72e96e9755fa797ec77cf))
+
 ## [0.6.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/react-v0.5.0...@themeless-ui/react-v0.6.0) (2023-09-23)
 
 

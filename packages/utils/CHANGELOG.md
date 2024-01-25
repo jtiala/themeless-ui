@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.7.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/utils-v0.6.0...@themeless-ui/utils-v0.7.0) (2024-01-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* updating Vite to v5
+
+### Features
+
+* add some null and empty check predicates to the utils package ([44ec671](https://github.com/jtiala/themeless-ui/commit/44ec671cff646daab3a702618e74ad03bc002540))
+* add util function for generating css class name strings conditionally ([e94195d](https://github.com/jtiala/themeless-ui/commit/e94195d474718390be13f462e92f90f1b30c9f51))
+
+
+### Miscellaneous Chores
+
+* update dependencies ([16cbe59](https://github.com/jtiala/themeless-ui/commit/16cbe5930d00029f4cb72e96e9755fa797ec77cf))
+
 ## [0.6.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/utils-v0.5.0...@themeless-ui/utils-v0.6.0) (2023-09-23)
 
 
