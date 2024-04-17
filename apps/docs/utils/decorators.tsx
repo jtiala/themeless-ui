@@ -1,6 +1,34 @@
 import { Decorator } from "@storybook/react";
 import { useEffect, useState } from "react";
 
+export const hiddenLabelDecorator: (htmlFor: string) => Decorator = (
+  htmlFor,
+) => {
+  const decorator: Decorator = (Story) => (
+    <>
+      <label
+        htmlFor={htmlFor}
+        style={{
+          position: "absolute",
+          overflow: "hidden",
+          width: "1px",
+          height: "1px",
+          padding: 0,
+          borderWidth: 0,
+          margin: "-1px",
+          clip: "rect(0, 0, 0, 0)",
+          whiteSpace: "nowrap",
+        }}
+      >
+        {htmlFor}
+      </label>
+      <Story />
+    </>
+  );
+
+  return decorator;
+};
+
 export const marginDecorator: (
   margin:
     | {
