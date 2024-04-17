@@ -7,7 +7,7 @@ export function ExampleItem({
   centered,
   children,
 }: {
-  title: string;
+  title?: string;
   direction?: "vertical" | "horizontal" | "vertical-reverse";
   centered?: boolean;
   children: ReactNode;
@@ -26,10 +26,9 @@ export function ExampleItem({
         gap: "8px",
       }}
     >
-      <ExampleTitle>{`${title}${
-        direction === "horizontal" ? ":" : ""
-      }`}</ExampleTitle>
-
+      {title && (
+        <ExampleTitle>{`${title}${direction === "horizontal" ? ":" : ""}`}</ExampleTitle>
+      )}
       {children}
     </div>
   );
