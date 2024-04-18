@@ -20,7 +20,7 @@
     "dist",
     "CHANGELOG.md"
   ],
-  "packageManager": "pnpm@8.14.1",
+  "packageManager": "pnpm@9.0.2",
   "scripts": {
     "dev": "next dev -p 3002",
     "build": "next build",
@@ -51,22 +51,22 @@
     "@themeless-ui/react": "workspace:*",
     "@themeless-ui/style": "workspace:*",
     "contentlayer": "0.3.4",
-    "date-fns": "3.2.0",
-    "next": "14.1.0",
+    "date-fns": "3.6.0",
+    "next": "14.2.2",
     "next-contentlayer": "0.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@playwright/test": "1.41.0",
+    "@playwright/test": "1.43.1",
     "@themeless-ui/eslint-config": "workspace:*",
     "@themeless-ui/stylelint-config": "workspace:*",
     "@themeless-ui/typescript-config": "workspace:*",
-    "@types/mdx": "2.0.10",
-    "@types/react": "18.2.48",
-    "@types/react-dom": "18.2.18",
-    "eslint": "8.56.0",
-    "stylelint": "16.2.0",
-    "typescript": "5.3.3"
+    "@types/mdx": "2.0.13",
+    "@types/react": "18.2.79",
+    "@types/react-dom": "18.2.25",
+    "eslint": "8.57.0",
+    "stylelint": "16.3.1",
+    "typescript": "5.4.5"
   }
 }
