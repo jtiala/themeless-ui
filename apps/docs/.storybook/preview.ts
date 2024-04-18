@@ -38,7 +38,13 @@ const preview: Preview = {
       },
     },
     actions: { argTypesRegex: "^on[A-Z].*" },
+    docs: {
+      controls: {
+        sort: "alpha",
+      },
+    },
     controls: {
+      sort: "alpha",
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/,
