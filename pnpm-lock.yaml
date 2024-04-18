@@ -242,6 +242,9 @@ importers:
       '@vitest/coverage-v8':
         specifier: 1.2.1
         version: 1.2.1(vitest@1.2.1)
+      '@vitest/expect':
+        specifier: 1.2.1
+        version: 1.2.1
       eslint:
         specifier: 8.56.0
         version: 8.56.0
@@ -358,6 +361,9 @@ importers:
       '@vitest/coverage-v8':
         specifier: 1.2.1
         version: 1.2.1(vitest@1.2.1)
+      '@vitest/expect':
+        specifier: 1.2.1
+        version: 1.2.1
       eslint:
         specifier: 8.56.0
         version: 8.56.0
@@ -449,6 +455,9 @@ importers:
       '@vitest/coverage-v8':
         specifier: 1.2.1
         version: 1.2.1(vitest@1.2.1)
+      '@vitest/expect':
+        specifier: 1.2.1
+        version: 1.2.1
       eslint:
         specifier: 8.56.0
         version: 8.56.0

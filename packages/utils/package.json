@@ -52,6 +52,7 @@
     "@themeless-ui/eslint-config": "workspace:*",
     "@themeless-ui/typescript-config": "workspace:*",
     "@vitest/coverage-v8": "1.2.1",
+    "@vitest/expect": "1.2.1",
     "eslint": "8.56.0",
     "typescript": "5.3.3",
     "vite-plugin-dts": "3.7.1",

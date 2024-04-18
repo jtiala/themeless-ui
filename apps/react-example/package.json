@@ -64,6 +64,7 @@
     "@types/react-test-renderer": "18.0.7",
     "@vitejs/plugin-react": "4.2.1",
     "@vitest/coverage-v8": "1.2.1",
+    "@vitest/expect": "1.2.1",
     "eslint": "8.56.0",
     "jsdom": "23.2.0",
     "react-test-renderer": "18.2.0",
