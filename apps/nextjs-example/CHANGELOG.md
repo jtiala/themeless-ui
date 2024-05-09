@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.7.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/nextjs-example-v0.6.0...@themeless-ui/nextjs-example-v0.7.0) (2024-05-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* updating Vite to v5
+
+### Features
+
+* add Prose component ([535ebfb](https://github.com/jtiala/themeless-ui/commit/535ebfbcba38d54d1b2b4031434c4d57fad97c0c))
+* publish every component's css as it's own file as well as the whole bundle ([b002b25](https://github.com/jtiala/themeless-ui/commit/b002b25f3931296031d61b12ef4bd9618d0e659c))
+
+
+### Miscellaneous Chores
+
+* update dependencies ([16cbe59](https://github.com/jtiala/themeless-ui/commit/16cbe5930d00029f4cb72e96e9755fa797ec77cf))
+
 ## 0.6.0 (2023-09-23)
 
 
