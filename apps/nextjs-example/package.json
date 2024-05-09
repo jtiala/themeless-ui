@@ -44,7 +44,7 @@
     "lint:stylelint": "stylelint \"**/*.css\"",
     "lint:stylelint:report": "stylelint -f json -o ./reports/lint-report-stylelint.json \"**/*.css\"",
     "lint:stylelint:fix": "stylelint \"**/*.css\" --fix",
-    "clean": "rm -rf dist reports node_modules .turbo",
+    "clean": "rm -rf dist reports node_modules .turbo .contentlayer .next tsconfig.tsbuildinfo",
     "publish:npm": "pnpm publish --access public"
   },
   "dependencies": {
@@ -52,21 +52,21 @@
     "@themeless-ui/style": "workspace:*",
     "contentlayer": "0.3.4",
     "date-fns": "3.6.0",
-    "next": "14.2.2",
+    "next": "14.2.3",
     "next-contentlayer": "0.3.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@playwright/test": "1.43.1",
+    "@playwright/test": "1.44.0",
     "@themeless-ui/eslint-config": "workspace:*",
     "@themeless-ui/stylelint-config": "workspace:*",
     "@themeless-ui/typescript-config": "workspace:*",
     "@types/mdx": "2.0.13",
-    "@types/react": "18.2.79",
-    "@types/react-dom": "18.2.25",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
     "eslint": "8.57.0",
-    "stylelint": "16.3.1",
+    "stylelint": "16.5.0",
     "typescript": "5.4.5"
   }
 }

@@ -29,7 +29,7 @@
     "lint:stylelint": "stylelint \"**/*.css\"",
     "lint:stylelint:report": "stylelint -f json -o ./reports/lint-report-stylelint.json \"**/*.css\"",
     "lint:stylelint:fix": "stylelint \"**/*.css\" --fix",
-    "clean": "rm -rf dist reports node_modules .turbo",
+    "clean": "rm -rf dist reports node_modules .turbo tsconfig.tsbuildinfo",
     "publish:npm": "pnpm publish --access public"
   },
   "dependencies": {
@@ -38,8 +38,8 @@
   "devDependencies": {
     "@themeless-ui/stylelint-config": "workspace:*",
     "@themeless-ui/typescript-config": "workspace:*",
-    "stylelint": "16.3.1",
+    "stylelint": "16.5.0",
     "typescript": "5.4.5",
-    "vite": "5.2.9"
+    "vite": "5.2.11"
   }
 }

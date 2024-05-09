@@ -30,6 +30,6 @@
     "@themeless-ui/web-components": "workspace:*"
   },
   "devDependencies": {
-    "serve": "14.2.1"
+    "serve": "14.2.3"
   }
 }

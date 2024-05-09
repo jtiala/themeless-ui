@@ -40,7 +40,7 @@
     "lint:eslint": "eslint \"**/*.{ts,tsx}\"",
     "lint:eslint:report": "eslint -f json -o ./reports/lint-report-eslint.json \"**/*.{ts,tsx}\"",
     "lint:eslint:fix": "eslint --fix \"**/*.{ts,tsx}\"",
-    "clean": "rm -rf dist reports node_modules .turbo",
+    "clean": "rm -rf dist reports node_modules .turbo tsconfig.tsbuildinfo",
     "publish:npm": "pnpm publish --access public"
   },
   "peerDependencies": {
@@ -55,6 +55,6 @@
     "@themeless-ui/typescript-config": "workspace:*",
     "eslint": "8.57.0",
     "typescript": "5.4.5",
-    "vite": "5.2.9"
+    "vite": "5.2.11"
   }
 }
