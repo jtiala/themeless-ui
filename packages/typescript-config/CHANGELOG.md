@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/typescript-config-v0.6.0...@themeless-ui/typescript-config-v0.7.0) (2024-05-09)
+
+
+### Features
+
+* add Storybook utils ([5f0dbf3](https://github.com/jtiala/themeless-ui/commit/5f0dbf37dc65af4ad668520a1058f20e70c9f070))
+
 ## [0.6.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/typescript-config-v0.5.0...@themeless-ui/typescript-config-v0.6.0) (2023-09-23)
 
 

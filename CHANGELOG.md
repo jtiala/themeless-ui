@@ -1,5 +1,38 @@
 # Changelog
 
+## [0.7.0](https://github.com/jtiala/themeless-ui/compare/themeless-ui-v0.6.0...themeless-ui-v0.7.0) (2024-05-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* updating Vite to v5
+
+### Features
+
+* add Prose component ([535ebfb](https://github.com/jtiala/themeless-ui/commit/535ebfbcba38d54d1b2b4031434c4d57fad97c0c))
+* add some null and empty check predicates to the utils package ([44ec671](https://github.com/jtiala/themeless-ui/commit/44ec671cff646daab3a702618e74ad03bc002540))
+* add Storybook utils ([5f0dbf3](https://github.com/jtiala/themeless-ui/commit/5f0dbf37dc65af4ad668520a1058f20e70c9f070))
+* add util function for generating css class name strings conditionally ([e94195d](https://github.com/jtiala/themeless-ui/commit/e94195d474718390be13f462e92f90f1b30c9f51))
+* add web components example app ([486c508](https://github.com/jtiala/themeless-ui/commit/486c5080bb01152a9b23549f31e498d59602f8cf))
+* create web component for each of the tui component that didn't have one already ([5a7592b](https://github.com/jtiala/themeless-ui/commit/5a7592b55cc864e1e4d355754f2c29ae08a52689))
+* import css for web components from styles package ([0ac88fc](https://github.com/jtiala/themeless-ui/commit/0ac88fc7077740737e39a30990cc86293e2fd771))
+* initial setup for web components ([4f18c6a](https://github.com/jtiala/themeless-ui/commit/4f18c6ab58e00c179ce48f8103b4668d3ad90d64))
+* publish every component's css as it's own file as well as the whole bundle ([b002b25](https://github.com/jtiala/themeless-ui/commit/b002b25f3931296031d61b12ef4bd9618d0e659c))
+* use cns util in stack class names ([b1eecbe](https://github.com/jtiala/themeless-ui/commit/b1eecbe4061db09d10b62820c14f65e56104c74b))
+
+
+### Bug Fixes
+
+* css selectors ([470e70c](https://github.com/jtiala/themeless-ui/commit/470e70ccbf0048c28d8126e6f4995f172960ce67))
+* incorrect css rules ([140e1f7](https://github.com/jtiala/themeless-ui/commit/140e1f76d685c91535cc4caf3512118dbcb9d318))
+* manually install vitest/except to fix linting error ([9078b54](https://github.com/jtiala/themeless-ui/commit/9078b5458da8a6c87ef87cc3e5c826dc754b04ac))
+* use type stored in const ([39c8de0](https://github.com/jtiala/themeless-ui/commit/39c8de0c56b28ac5d0bc760bf39ba9bb1e98fced))
+
+
+### Miscellaneous Chores
+
+* update dependencies ([16cbe59](https://github.com/jtiala/themeless-ui/commit/16cbe5930d00029f4cb72e96e9755fa797ec77cf))
+
 ## [0.6.0](https://github.com/jtiala/themeless-ui/compare/themeless-ui-v0.5.0...themeless-ui-v0.6.0) (2023-09-23)
 
 

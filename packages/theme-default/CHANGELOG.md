@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.7.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/theme-default-v0.6.0...@themeless-ui/theme-default-v0.7.0) (2024-05-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* updating Vite to v5
+
+### Miscellaneous Chores
+
+* update dependencies ([16cbe59](https://github.com/jtiala/themeless-ui/commit/16cbe5930d00029f4cb72e96e9755fa797ec77cf))
+
 ## [0.6.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/theme-default-v0.5.0...@themeless-ui/theme-default-v0.6.0) (2023-09-23)
 
 

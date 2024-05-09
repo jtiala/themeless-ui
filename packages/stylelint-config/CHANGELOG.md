@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/stylelint-config-v0.6.0...@themeless-ui/stylelint-config-v0.7.0) (2024-05-09)
+
+
+### Miscellaneous Chores
+
+* **@themeless-ui/stylelint-config:** Synchronize [@themeless-ui](https://github.com/themeless-ui) versions
+
 ## [0.6.0](https://github.com/jtiala/themeless-ui/compare/@themeless-ui/stylelint-config-v0.5.0...@themeless-ui/stylelint-config-v0.6.0) (2023-09-23)
 
 
